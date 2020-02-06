@@ -1,0 +1,155 @@
+.Rectangle-472 {
+
+    position: absolute;
+    width: 250px;
+  
+    height: 170.5px;
+  
+    border-radius: 4.5px;
+  
+    background-color: #6c63ff;
+  
+  }
+
+  .Rectangle-475 {
+    
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 240px;
+    height: 170px;
+    border-radius: 4.5px;
+    border: solid 1.5px #342ada;
+    z-index: 1;
+
+  }
+
+  .Sappa-Chaaya {
+    
+    padding-top: 32px;
+    margin-bottom: 30px;
+    width: 104px;
+    height: 15.5px;
+    font-family: JosefinSans;
+    font-size: 15px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: 0.11px;
+    text-align: right;
+    color: #ffffff;
+  }
+
+  .Sponsorship {
+    margin-bottom: 5px;
+    width: 70px;
+    height: 12.5px;
+    font-family: JosefinSans;
+    font-size: 12.5px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 0.09px;
+    text-align: right;
+    color: #ffffff;
+  }
+
+  .num {
+
+    margin-bottom: 5px;
+    width: 92px;
+    height: 12.5px;
+    font-family: JosefinSans;
+    font-size: 12.5px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 0.09px;
+    text-align: right;
+    color: #ffffff;
+  }
+
+  .subbareddyeclectikaorg {
+
+    margin-bottom: 5px;
+    width: 154px;
+    height: 12.5px;
+    font-family: JosefinSans;
+    font-size: 12.5px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 0.09px;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .chhaya-mam {
+
+    z-index: 3;
+
+    width: 102px;
+  
+    height: 102px;
+  
+    object-fit: contain;
+  
+    border: solid 4.5px #2a20da;
+  
+  }
+
+
+  .mem-pic{
+      margin-bottom: -20px;
+      height:130px;
+      z-index: 999;
+  }
+
+  .team-title{
+    margin-bottom: 3%;
+    margin-top: 3%;
+    margin-left: 40%;
+}
+
+.team-heading{
+    float: left;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.font-heading{
+    font-family: SegoeUI;
+
+    font-size: 44px;
+  
+    font-weight: bold;
+  
+    font-stretch: normal;
+  
+    font-style: normal;
+  
+    line-height: 1.33;
+  
+    letter-spacing: 0.31px;
+  
+    text-align: left;
+  
+    color: #6c63ff;
+}
+
+
+
+.inrow{
+    margin-bottom: 200px;
+}
+
+.col-lg-4{
+    padding-left: 130px;
+}
+
+
+

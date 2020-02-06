@@ -1,0 +1,53 @@
+.taste-heading{
+    font-family: Lato;
+
+    font-size: 40px;
+  
+    font-weight: bold;
+  
+    font-stretch: normal;
+  
+    font-style: normal;
+  
+    line-height: 1.3;
+  
+    letter-spacing: -1.12px;
+  
+    text-align: center;
+  
+    color: #c91b28;
+}
+
+.btnn{
+    background-color: #2f2e41;
+    font-family: Lato;
+
+    font-size: 23px;
+  
+    font-weight: bold;
+  
+    font-stretch: normal;
+  
+    font-style: normal;
+  
+    line-height: 1.2;
+  
+    letter-spacing: 2px;
+  
+    color: #ffffff
+}
+
+.form-control{
+    background-color: #ffdce6;
+    padding: 5%;
+}
+
+.taste-form{
+    margin-left: 3%;
+    margin-bottom: 10%;
+}
+
+.taste-image{
+    margin-left: 5%;
+    padding: 10%;
+}

@@ -1,0 +1,64 @@
+.about-content{
+    
+    text-align: center;
+  
+    font-family: Lato;
+  
+    font-size: 150%;
+  
+    font-weight: normal;
+  
+    font-stretch: normal;
+  
+    font-style: normal;
+  
+    line-height: 1.18;
+  
+    letter-spacing: 0.14px;
+  
+    text-align: center;
+  
+    color: #090909;
+
+    padding : 10%;
+}
+.about-heading{
+    text-align: center;
+    font-family: Lato;
+
+    font-size: 44px;
+  
+    font-weight: bold;
+  
+    font-stretch: normal;
+  
+    font-style: normal;
+  
+    line-height: 1.2;
+  
+    letter-spacing: 0.31px;
+  
+  
+    color: #fe4310;
+    
+}
+
+.about-bottom{
+    
+    height: 20%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.main{
+    height: 45%;
+    position: absolute;
+    bottom: 40%;
+}
+
+.main-circle{
+    height:80%;
+    position: absolute;
+    bottom: 20%;
+    right:10%;
+}

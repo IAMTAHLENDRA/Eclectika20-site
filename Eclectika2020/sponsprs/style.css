@@ -1,0 +1,49 @@
+.spons-heading{
+    float: left;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.font-heading{
+    font-family: SegoeUI;
+
+    font-size: 44px;
+  
+    font-weight: bold;
+  
+    font-stretch: normal;
+  
+    font-style: normal;
+  
+    line-height: 1.33;
+  
+    letter-spacing: 0.31px;
+  
+    text-align: left;
+  
+    color: #6c63ff;
+}
+
+.spons-title{
+    margin-left: 35%;
+}
+
+.spons-right{
+    height: 180px;
+}
+
+.spons-left{
+    height: 110px;
+}
+
+.spons-image{
+    float: left;
+    margin: 10px;
+    border:7px solid #d0cdff;
+    box-shadow: 5px 5px 2px #E8E8E8;
+}
+
+.row{
+    margin-left: 2%;
+    margin-bottom: 30px;
+}
