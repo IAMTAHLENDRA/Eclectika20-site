@@ -1,103 +1,3 @@
-<<<<<<< HEAD
-.bg-landing{
-    background-image: url("assets/images/bg.png");
-}
-.container-fluid{
- margin-top: 9em;
-  height: 38em;  
-}
-.scooter{
-    margin: 0;
-    height: 5em;
-    width: 100%;
-}
-.scooter-jump{
-    position: relative;
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation-name: up-down;
-    animation-direction: alternate;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    z-index: 2;
-    padding-top: 50px;
-}
-
-@keyframes up-down {
-    from {/* transform:translate(0,0px); */}
-    to {transform:translate(0,10px);}
-}
-
-.road {
-    width: 100%;
-    height: 200px;
-    background-color: #585858;
-    border-top: 10px solid #756D6D;
-    border-bottom: 20px solid #756D6D;
-    position: absolute;
-    /* bottom: 0%; */
-    /* margin-left: -10px; */
-    padding: 0;
-    overflow: hidden;
-}
-.road::before {
-    content: " ";
-    position: relative;
-    z-index: 0;
-    top: -17px;
-    left: 0px;
-    right: 0px;
-    border: 5px solid black;
-    overflow: hidden;
-}
-.road-top-half {
-    height: 15px;
-    width: 250%;
-    position: absolute;
-    left: -10%;
-    top: 40px;
-    border-top: 30px dashed white;
-    margin-top: 25px;
-    animation: road-moving 10s infinite linear;
-    /* transition: all 1s linear; */
-    overflow: hidden;
-}
-
-@keyframes road-moving {
-    100% {
-        transform: translate(-2400px);
-    }
-}
-
-#badal-1{
-    background-image: url("assets/images/cloud1.png");
-    background-repeat: no-repeat;
-    height: 300px; 
-    position: absolute;
-    padding-top: 100px;
-    left: 10%;
-    animation-name: up-down;
-    animation-direction: alternate;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    margin-top: 2em;
-}
-#badal-2{
-    background-image: url("assets/images/cloud2.png");
-    background-repeat: no-repeat;
-    height: 300px; 
-    position: absolute;
-    padding-top: 100px;
-    right: 0;
-    animation-name: up-down;
-    animation-direction: alternate;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    margin-top: 2em;
-=======
 .bg-landing {
   background-image: url("assets/images/bg.png");
 }
@@ -224,7 +124,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #666;
 }
 
@@ -284,8 +184,7 @@ footer {
   }
 }
 
-#eventlogo{
-    width: 341px;
+#eventlogo {
+  width: 341px;
   height: 341px;
->>>>>>> .
 }
