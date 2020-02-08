@@ -1,5 +1,6 @@
 .bg-landing{
     background-image: url("assets/images/bg.png");
+    height: 60em;
 }
 .container-fluid{
  margin-top: 9em;
@@ -96,4 +97,17 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     margin-top: 2em;
+}
+
+.our_theme{
+    height: 100em;
+    background-image: url("./assets/Our_Theme/Cropped1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.our_theme2{
+    height: 80em;
+    background-image: url("./assets/Our_Theme/Cropped2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
