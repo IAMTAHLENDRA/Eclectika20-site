@@ -1,0 +1,54 @@
+.footerC {  
+    background-image: url("bg.png");
+    background-repeat: no-repeat;
+    
+    
+}
+
+.movie{
+    margin-top: 18%;
+}
+.add{
+    padding-top: 15%;
+    font-weight: 500;
+    align-self: center;
+}
+
+#social {
+    height: 30px;
+}
+
+.linker{
+    margin-left: 2px;
+    width: 10%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+     [class*="lean"] {
+        width: 30%;
+        display: inline;
+      }
+      [class*="add"] {
+        font-size: 60%;
+        width: 50px;
+      }
+      [class*="lean-head"] {
+        font-size: 20px;
+        width: 50px;
+      }
+      [class*="block-16"] {
+        width: 10px;
+        height: 10px;
+      }
+      [class*="ifr"] {
+        height: 200px;
+        width : 300px;
+      }
+      
+  } 
+
+  iframe{
+      height: 315px;
+      width : 470px;
+  }
