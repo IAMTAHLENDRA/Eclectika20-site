@@ -1,6 +1,10 @@
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
 .bg-landing{
     background-image: url("assets/images/bg.png");
-    height: 60em;
+    height: 59.6em;
 }
 .container-fluid{
  margin-top: 9em;
@@ -100,14 +104,44 @@
 }
 
 .our_theme{
-    height: 100em;
-    background-image: url("./assets/Our_Theme/Cropped1.png");
-    background-size: cover;
+    margin-top: 10px;
+    height: 165em;
+    background-image: url("./assets/Our_Theme/background.png");
+    background-size: contain;
+    background-repeat: no-repeat;    
+}
+.bg-image{
+    height: 30em;
+    margin: 100px -90px;
+}
+.couple{
+    background: url("./assets/about-us/bg_circle.png");
+    height: 600px;
+    width: 600px;
+    background-size: contain;
+    margin: 100px -90px;
     background-repeat: no-repeat;
 }
-.our_theme2{
-    height: 80em;
-    background-image: url("./assets/Our_Theme/Cropped2.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+.couple_2{
+   background-image: url("./assets/about-us/main_IMG.png");
+   position: absolute;
+   background-size: contain;
+   height: 500px;
+   width: 500px;
+   margin: 150px;
+   margin-left: 40px;
+   background-repeat: no-repeat;
+}
+.text{
+    font-size: 30px;
+    text-align: center;
+    margin: 150px;
+    margin-left: 20px;
+    font-family: Lato;
+}
+.headers{
+    text-align: center;
+    font-size: 60px;
+    color: #fe4310;
+    font-family: Lato;
 }
