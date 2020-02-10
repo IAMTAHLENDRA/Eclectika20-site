@@ -23,24 +23,45 @@
   </head>
 
   <body>
-    <section>
-      <div class="bg-landing">
-        <div class="row">
-          <div class="col-sm-6" id="badal-1"></div>
-          <div class="col-sm-6" id="badal-2"></div>
-        </div>
-        <div class="container-fluid">
-          <div class="scooter">
-            <img class="scooter-jump" src="assets/images/scooter2.png" />
+    <div class="mainn">
+        <nav class="top-right open">
+            <a class="disc l1">
+                <div>Messages</div>
+            </a>
+            <a class="disc l2">
+                <div>Photos</div>
+            </a>
+            <a class="disc l3">
+                <div>Profile</div>
+            </a>
+            <a class="disc l4">
+                <div>Likes</div>
+            </a>
+            <a class="disc l5 toggle">
+                Menu
+            </a>
+        </nav>
+        <div class="moon"></div>
+
+        <div class="skyline">
+          <div class="building1-shadow"></div>
+          <div class="building1">
+            <div class="building-left-half"></div>
+            <div class="building-right-half"></div>
           </div>
         </div>
-        <!-- <div class="path"></div> -->
+        
+        <div class="container-fluid">
+          <div class="scooter">
+            <img class="scooter-jump" src="./assets/images/scooter2.png" />
+            <img class="headlight" src="./assets/images/head-light.png" alt="">
+          </div>
+        </div>
         <div class="road">
           <div class="road-top-half"></div>
           <div class="road-bottom-half"></div>
         </div>
       </div>
-    </section>
     <section class="who_are_we">
       <div class="about_us">
         <div class="row">
@@ -190,7 +211,24 @@
     </div>
     <script src="http://mynameismatthieu.com/WOW/dist/wow.min.js"></script>
     <script>
-      new WOW().init();
+      toggle = document.querySelectorAll(".toggle")[0];
+nav = document.querySelectorAll("nav")[0];
+toggle_open_text = 'Menu';
+toggle_close_text = 'Close';
+
+toggle.addEventListener('click', function() {
+	nav.classList.toggle('open');
+	
+  if (nav.classList.contains('open')) {
+    toggle.innerHTML = toggle_close_text;
+  } else {
+    toggle.innerHTML = toggle_open_text;
+  }
+}, false);
+
+setTimeout(function(){
+	nav.classList.toggle('open');	
+}, 800);
     </script>
   </body>
 </html>
