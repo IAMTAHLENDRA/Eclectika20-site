@@ -659,3 +659,124 @@ footer {
   width: 341px;
   height: 341px;
 }
+/* modal events */
+@media (min-width:768px){
+.modal-dialog{
+  margin: 30px 400px auto !important;
+  width: 900px !important;
+}
+.modal-content{
+  background-color: #ff4d4d !important;
+}
+.modal-header{
+  text-align:center;
+  font-size: 40px !important;
+  color: #fff;
+  font-family: Lato;
+  border-bottom: none !important;
+  font-weight: bold;
+}
+.modal-header .close{
+  color: #fff;
+  opacity: .8;
+}
+.Description{
+  height: 400px;
+ width: 600px !important;
+ background-color: #fff;
+ border-radius: 12px; 
+ padding-left: 0 !important;
+ padding-right: 0 !important;
+}
+.Description2{
+  height: 200px;
+ width: 600px !important;
+ background-color: #fff;
+ border-radius: 12px; 
+ padding-left: 0 !important;
+ padding-right: 0 !important;
+ margin-top: 100px;
+}
+.Description3{
+  height: 200px;
+ width: 600px !important;
+ background-color: #fff;
+ border-radius: 12px; 
+ padding-left: 0 !important;
+ padding-right: 0 !important;
+ margin-top: 100px;
+}
+.eve_head{
+  font-size: 30px;
+  text-align: left;
+  color: #000;
+  font-family: Lato;
+  background-color: #ffb3b3;
+  margin: 5px;
+  border-radius: 10px;
+  height: 60px;
+  padding: 10px;
+}
+
+}
+@media (max-width:768px){
+  .modal-dialog{
+    margin: 30px auto !important;
+    width: 310px !important;
+  }
+  .modal-content{
+    background-color: #ff4d4d !important;
+  }
+  .modal-header{
+    text-align:center;
+    font-size: 40px !important;
+    color: #fff;
+    font-family: Lato;
+    border-bottom: none !important;
+    font-weight: bold;
+  }
+  .modal-header .close{
+    color: #fff;
+    opacity: .8;
+  }
+  .Description{
+    height: 250px;
+   width: 280px !important;
+   background-color: #fff;
+   border-radius: 12px; 
+   padding-left: 0 !important;
+   padding-right: 0 !important;
+  }
+  .Description2{
+    height: 100px;
+   width: 280px !important;
+   background-color: #fff;
+   border-radius: 12px; 
+   padding-left: 0 !important;
+   padding-right: 0 !important;
+   margin-top: 60px;
+  }
+  .Description3{
+    height: 100px;
+   width: 280pxpx !important;
+   background-color: #fff;
+   border-radius: 12px; 
+   padding-left: 0 !important;
+   padding-right: 0 !important;
+   margin-top: 60px;
+  }
+  .eve_head{
+    font-size: 20px;
+    text-align: left;
+    color: #000;
+    font-family: Lato;
+    background-color: #ffb3b3;
+    margin: 5px;
+    border-radius: 10px;
+    height: 33px;
+    padding: 5px;
+  }
+  
+  }
+    
+/* modal events */
