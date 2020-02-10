@@ -190,8 +190,8 @@ body {
     height: 600px;
     width: 600px;
     background-size: contain;
-    margin-top: -20%;
-    margin-left:-10px ;
+    margin-top: 10px;
+    z-index:2;
     background-repeat: no-repeat;
 }
 .couple_2{
@@ -203,6 +203,7 @@ body {
    margin: 150px;
    margin-left: 40px;
    background-repeat: no-repeat;
+    z-index:5;
 }
 .text{
     font-size: 30px;
