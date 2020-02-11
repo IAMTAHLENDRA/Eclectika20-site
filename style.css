@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Monoton&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700);
+
 nav {
   display: block;
   position: fixed;
@@ -29,8 +31,16 @@ nav.top-right {
 @media screen and (max-width: 680px) {
   nav {
     position: absolute;
+    display: block;
+
+  }
+  nav.top-right {
+    top: -160px;
+    right: -160px;
   }
 }
+
+
 
 .neon {
   font-family: "Monoton", cursive;
