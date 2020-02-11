@@ -449,6 +449,14 @@ nav.top-right {
     height: 300px;
   }
 }
+@media screen and (device-width: 360px) {
+  .building1{
+    height: 200px;
+    width: 170px;
+  }
+  
+}
+
 .building-left-half,
 .building-right-half {
   height: 550px;
@@ -462,7 +470,7 @@ nav.top-right {
 @media screen and (max-width: 680px) {
   .building-left-half,
   .building-right-half {
-    height: 450px;
+    height: 340px;
     width: 50px;
     position: absolute;
     top: 10px;
@@ -521,9 +529,9 @@ nav.top-right {
   margin-top: 200px;
 }
 @media screen and (max-width: 680px) {
-  .scooter-jump {
-    margin-top: 240px;
+  .scooter {
   }
+  
 }
 @keyframes up-down {
   from {
@@ -549,7 +557,7 @@ nav.top-right {
   .headlight {
     z-index: 2;
     position: absolute;
-    margin-top: 175px;
+    margin-top: 135px;
     margin-left: -75px;
   }
 }
