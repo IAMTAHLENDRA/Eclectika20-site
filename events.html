@@ -14,8 +14,23 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
   <body id="eventbody">
+    <button
+      type="button"
+      class="btn btn-info event-button"
+      data-toggle="modal"
+      data-target="#myModal"
+      style="margin-top: 10px;"
+    >
+      Event <br>Schedule
+    </button>
     <p id="eventtitle" class="wow animated bounceIn">Events</p>
     <section class="columns">
       <div class="column wow animated bounceInLeft">
@@ -75,9 +90,72 @@
         />
       </div>
     </section>
+
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-title">Event Schedule</div>
+          </div>
+          <div class="modal-body">
+            <div class="container Description-event">
+              <!-- <div class="eve_head">&nbsp; Description & Rules</div> -->
+              <ul class="m-accordion-button-tabs-minimal">
+                <li class="m-tab-header-and-content">
+                  <a href="#" class="m-tab-link is-active">Day 1</a>
+                  <div class="m-tab-content">
+                    <p><img src="images/coming-soon.jpg" class="coming-soon-img"></p>
+                  </div>
+                </li>
+                <li class="m-tab-header-and-content">
+                  <a href="#" class="m-tab-link">Day 2</a>
+                  <div class="m-tab-content">
+                    <p><img src="images/coming-soon.jpg" class="coming-soon-img"></p> 
+                </li>
+                <li class="m-tab-header-and-content">
+                  <a href="#" class="m-tab-link">Day 3</a>
+                  <div class="m-tab-content">
+                    <p><img src="images/coming-soon.jpg" class="coming-soon-img"></p>    
+                  </div>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div> -->
+        </div>
+        
+      </div>
+    </div>
     <script src="http://mynameismatthieu.com/WOW/dist/wow.min.js"></script>
     <script>
       new WOW().init();
+    </script>
+    <script>
+      $(document).ready(function () {
+  $('.m-accordion-button-tabs-minimal').each(function(index) {
+    $(this).children('li').first().children('a').addClass('is-active').next().addClass('is-open').show();
+  });
+  $('.m-accordion-button-tabs-minimal').on('click', 'li > a.m-tab-link', function(event) {
+    if (!$(this).hasClass('is-active')) {
+      event.preventDefault();
+      var accordionTabs = $(this).closest('.m-accordion-button-tabs-minimal');
+      accordionTabs.find('.is-open').removeClass('is-open').hide();
+
+      $(this).next().toggleClass('is-open').toggle();
+      accordionTabs.find('.is-active').removeClass('is-active');
+      $(this).addClass('is-active');
+    } else {
+      event.preventDefault();
+    }
+  });
+});
+
     </script>
   </body>
 </html>
