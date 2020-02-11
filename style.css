@@ -46,7 +46,11 @@ nav.top-right {
     2px 0px 3px #d42cca, 2px 3px 15px #d42cca, 2px 0px 15px, 5px 0px 125px,
     20px 0vw 200px #d42cca, 40px 0vw 200px #d42cca;
 }
-
+@media screen and (max-width: 680px) {
+  .neon {
+    font-size: 35px;
+  }
+}
 .flicker-slow {
   animation: flicker 3s linear infinite;
 }
@@ -373,7 +377,7 @@ nav.top-right {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(110deg);
   }
 }
 .road {
@@ -435,6 +439,8 @@ nav.top-right {
   position: absolute;
   left: -199px;
 }
+
+
 @media screen and (max-width: 680px) {
   .building1 {
     height: 300px;
@@ -488,7 +494,7 @@ nav.top-right {
   right: 370px;
   top: 30px;
   position: absolute;
-  animation: sun-moon 40s 2s linear infinite;
+  animation: sun-moon 20s 2s linear infinite;
   transform-origin: 50% 500px;
 }
 .container-fluid {
@@ -573,6 +579,10 @@ body {
   color: #666;
 }
 
+.who_are_we,
+.about_us {
+  z-index: 10;
+}
 /* STRUCTURE */
 .wrapper {
   padding: 5px;
@@ -1090,7 +1100,6 @@ footer {
   height: 341px;
 }
 /* modal events */
-<<<<<<< HEAD
 @media (min-width:768px){
   .event-details{
     transition: 0.2s ease-in-out;
@@ -1106,16 +1115,6 @@ footer {
 .modal-content{
   background: url("./assets/images/eventbackground.png");
   background-size:cover;
-=======
-@media (min-width: 768px) {
-  .modal-dialog {
-    margin: 30px 400px auto !important;
-    width: 900px !important;
-  }
-  .modal-content {
-    background: url("./assets/images/eventbackground.png");
-    background-size: cover;
->>>>>>> Added flicker text
     background-repeat: no-repeat;
   }
   .modal-header {
@@ -1227,7 +1226,6 @@ footer {
     height: 33px;
     padding: 5px;
   }
-<<<<<<< HEAD
   
   }
     
@@ -1340,8 +1338,3 @@ footer {
 }
 
 /* event_schedule */
-=======
-}
-
-/* modal events */
->>>>>>> Added flicker text
