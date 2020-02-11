@@ -1,29 +1,79 @@
-  
-
+@import url("https://fonts.googleapis.com/css?family=Monoton&display=swap");
 nav {
   display: block;
   position: fixed;
   width: 500px;
   height: 500px;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-transform: translate3d(25px, -25px, 0);
-          transform: translate3d(25px, -25px, 0);
+  transform: translate3d(25px, -25px, 0);
   -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
   transition: -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
   transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
-  transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9), -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+  transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9),
+    -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
   z-index: 2;
 }
 nav.open {
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 nav.top-right {
   top: -140px;
   right: -140px;
+}
+
+@media screen and (max-width: 680px) {
+  nav {
+    position: absolute;
+  }
+}
+
+.neon {
+  font-family: "Monoton", cursive;
+  font-size: 50px;
+  color: #ffd5ff;
+  position: absolute;
+  margin-top: -35px;
+  margin-left: 80px;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+  letter-spacing: 8px;
+  text-shadow: 1px 0px 4px #ffd5ff, 2px 0px 4px #ffd5ff, 3px 0px 4px #ffd5ff,
+    2px 0px 3px #d42cca, 2px 3px 15px #d42cca, 2px 0px 15px, 5px 0px 125px,
+    20px 0vw 200px #d42cca, 40px 0vw 200px #d42cca;
+}
+
+.flicker-slow {
+  animation: flicker 3s linear infinite;
+}
+
+.flicker-fast {
+  animation: flicker 1s linear infinite;
+}
+
+@keyframes flicker {
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  100% {
+    opacity: 0.99;
+  }
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999% {
+    opacity: 0.4;
+  }
 }
 
 .disc {
@@ -36,18 +86,21 @@ nav.top-right {
   padding-top: 10px;
   border-radius: 250px;
   -webkit-transform: scale3d(0.5, 0.5, 0.5) rotate3d(0, 0, 1, 190deg);
-          transform: scale3d(0.5, 0.5, 0.5) rotate3d(0, 0, 1, 190deg);
+  transform: scale3d(0.5, 0.5, 0.5) rotate3d(0, 0, 1, 190deg);
   pointer-events: none;
   opacity: 0;
   cursor: pointer;
-  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
-  transition: opacity 0.5s, -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+  -webkit-transition: opacity 0.5s,
+    -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+  transition: opacity 0.5s,
+    -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
   transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9), opacity 0.5s;
-  transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9), opacity 0.5s, -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+  transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9), opacity 0.5s,
+    -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
 }
 .disc div {
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .open .disc {
   pointer-events: auto;
@@ -61,20 +114,20 @@ nav.top-right {
   bottom: 0px;
   background: tomato;
   -webkit-transition-delay: 0s;
-          transition-delay: 0s;
+  transition-delay: 0s;
 }
 .open .l1 {
   -webkit-transition-delay: 0s;
-          transition-delay: 0s;
+  transition-delay: 0s;
   -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
-          transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   opacity: 1;
 }
 .open .l1:hover {
   background: shade(tomato, 90%);
   color: tomato;
   -webkit-transition-delay: 0s;
-          transition-delay: 0s;
+  transition-delay: 0s;
 }
 .open .l1:active {
   background: shade(tomato, 50%);
@@ -82,7 +135,7 @@ nav.top-right {
 }
 .open .l1.toggle {
   -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
-          transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+  transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
 }
 
 .l2 {
@@ -92,20 +145,20 @@ nav.top-right {
   bottom: 50px;
   background: #ff7a39;
   -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 .open .l2 {
   -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
+  transition-delay: 0.1s;
   -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
-          transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   opacity: 1;
 }
 .open .l2:hover {
   background: shade(#ff7a39, 90%);
   color: #ff7a39;
   -webkit-transition-delay: 0s;
-          transition-delay: 0s;
+  transition-delay: 0s;
 }
 .open .l2:active {
   background: shade(#ff7a39, 50%);
@@ -113,7 +166,7 @@ nav.top-right {
 }
 .open .l2.toggle {
   -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
-          transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+  transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
 }
 
 .l3 {
@@ -123,20 +176,20 @@ nav.top-right {
   bottom: 100px;
   background: #ff912b;
   -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 .open .l3 {
   -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
+  transition-delay: 0.2s;
   -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
-          transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   opacity: 1;
 }
 .open .l3:hover {
   background: shade(#ff912b, 90%);
   color: #ff912b;
   -webkit-transition-delay: 0s;
-          transition-delay: 0s;
+  transition-delay: 0s;
 }
 .open .l3:active {
   background: shade(#ff912b, 50%);
@@ -144,7 +197,7 @@ nav.top-right {
 }
 .open .l3.toggle {
   -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
-          transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+  transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
 }
 
 .l4 {
@@ -154,20 +207,20 @@ nav.top-right {
   bottom: 150px;
   background: #ffa91c;
   -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }
 .open .l4 {
   -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+  transition-delay: 0.3s;
   -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
-          transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   opacity: 1;
 }
 .open .l4:hover {
   background: shade(#ffa91c, 90%);
   color: #ffa91c;
   -webkit-transition-delay: 0s;
-          transition-delay: 0s;
+  transition-delay: 0s;
 }
 .open .l4:active {
   background: shade(#ffa91c, 50%);
@@ -175,7 +228,7 @@ nav.top-right {
 }
 .open .l4.toggle {
   -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
-          transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+  transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
 }
 
 .l5 {
@@ -185,20 +238,20 @@ nav.top-right {
   bottom: 200px;
   background: #ffc00e;
   -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
+  transition-delay: 0.4s;
 }
 .open .l5 {
   -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
+  transition-delay: 0.4s;
   -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
-          transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
   opacity: 1;
 }
 .open .l5:hover {
   background: shade(#ffc00e, 90%);
   color: #ffc00e;
   -webkit-transition-delay: 0s;
-          transition-delay: 0s;
+  transition-delay: 0s;
 }
 .open .l5:active {
   background: shade(#ffc00e, 50%);
@@ -206,7 +259,7 @@ nav.top-right {
 }
 .open .l5.toggle {
   -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
-          transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+  transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
 }
 
 .toggle {
@@ -216,14 +269,14 @@ nav.top-right {
   background: gold;
   opacity: 1;
   -webkit-transform: none;
-          transform: none;
+  transform: none;
   pointer-events: auto;
   -webkit-transition-delay: 0s;
-          transition-delay: 0s;
+  transition-delay: 0s;
 }
 .open .toggle {
   -webkit-transform: rotate3d(0, 0, 1, 0deg);
-          transform: rotate3d(0, 0, 1, 0deg);
+  transform: rotate3d(0, 0, 1, 0deg);
 }
 .toggle:hover {
   background: shade(gold, 90%);
@@ -233,11 +286,10 @@ nav.top-right {
   background: shade(gold, 50%);
   color: rgba(255, 215, 0, 0.5);
   -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
   -webkit-transition-duration: 0s;
-          transition-duration: 0s;
+  transition-duration: 0s;
 }
-
 
 .mainn {
   overflow: hidden;
@@ -365,9 +417,10 @@ nav.top-right {
   animation: road-moving 10s infinite linear;
   transition: all 8s linear;
 }
+
 .building1 {
   width: 220px;
-  height: 700px;
+  height: 500px;
   background-color: #211919;
   position: relative;
 }
@@ -384,11 +437,10 @@ nav.top-right {
 }
 @media screen and (max-width: 680px) {
   .building1 {
-    height: 400px;
+    height: 300px;
   }
-  .building1-shadow{
-    height: 400px;
-
+  .building1-shadow {
+    height: 300px;
   }
 }
 .building-left-half,
@@ -478,9 +530,9 @@ nav.top-right {
 
 .headlight {
   width: 700px;
-margin-left: -140px;
-margin-bottom: -150px;
-animation-name: up-down;
+  margin-left: -140px;
+  margin-bottom: -150px;
+  animation-name: up-down;
   animation-direction: alternate;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
@@ -490,6 +542,9 @@ animation-name: up-down;
 @media screen and (max-width: 680px) {
   .headlight {
     z-index: 2;
+    position: absolute;
+    margin-top: 175px;
+    margin-left: -75px;
   }
 }
 #eventbody {
@@ -881,15 +936,6 @@ h1 {
 /* End item */
 
 /* categories || Examples Action, Romance, New, And Popular Today */
-span {
-  width: 10%;
-  margin: 20px;
-  z-index: 10;
-  padding: 7px;
-  background: -webkit-linear-gradient(to right, #b24592, #f15f79);
-  background: linear-gradient(to right, #b24592, #f15f79);
-  border-radius: 50px 120px 120px;
-}
 
 .popular {
   width: 100px;
@@ -1044,6 +1090,7 @@ footer {
   height: 341px;
 }
 /* modal events */
+<<<<<<< HEAD
 @media (min-width:768px){
   .event-details{
     transition: 0.2s ease-in-out;
@@ -1059,108 +1106,117 @@ footer {
 .modal-content{
   background: url("./assets/images/eventbackground.png");
   background-size:cover;
+=======
+@media (min-width: 768px) {
+  .modal-dialog {
+    margin: 30px 400px auto !important;
+    width: 900px !important;
+  }
+  .modal-content {
+    background: url("./assets/images/eventbackground.png");
+    background-size: cover;
+>>>>>>> Added flicker text
     background-repeat: no-repeat;
+  }
+  .modal-header {
+    text-align: center;
+    font-size: 40px !important;
+    color: #000;
+    font-family: Lato;
+    border-bottom: none !important;
+    font-weight: bold;
+  }
+  .modal-header .close {
+    color: #000;
+    opacity: 0.8;
+  }
+  .Description {
+    height: 400px;
+    width: 600px !important;
+    background-color: #fff;
+    border-radius: 12px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .Description2 {
+    height: 200px;
+    width: 600px !important;
+    background-color: #fff;
+    border-radius: 12px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-top: 100px;
+  }
+  .Description3 {
+    height: 200px;
+    width: 600px !important;
+    background-color: #fff;
+    border-radius: 12px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-top: 100px;
+  }
+  .eve_head {
+    font-size: 30px;
+    text-align: left;
+    color: #000;
+    font-family: Lato;
+    background-color: #ffb3b3;
+    margin: 5px;
+    border-radius: 10px;
+    height: 60px;
+    padding: 10px;
+  }
 }
-.modal-header{
-  text-align:center;
-  font-size: 40px !important;
-  color: #000;
-  font-family: Lato;
-  border-bottom: none !important;
-  font-weight: bold;
-}
-.modal-header .close{
-  color: #000;
-  opacity: .8;
-}
-.Description{
-  height: 400px;
- width: 600px !important;
- background-color: #fff;
- border-radius: 12px; 
- padding-left: 0 !important;
- padding-right: 0 !important;
-}
-.Description2{
-  height: 200px;
- width: 600px !important;
- background-color: #fff;
- border-radius: 12px; 
- padding-left: 0 !important;
- padding-right: 0 !important;
- margin-top: 100px;
-}
-.Description3{
-  height: 200px;
- width: 600px !important;
- background-color: #fff;
- border-radius: 12px; 
- padding-left: 0 !important;
- padding-right: 0 !important;
- margin-top: 100px;
-}
-.eve_head{
-  font-size: 30px;
-  text-align: left;
-  color: #000;
-  font-family: Lato;
-  background-color: #ffb3b3;
-  margin: 5px;
-  border-radius: 10px;
-  height: 60px;
-  padding: 10px;
-}
-
-}
-@media (max-width:768px){
-  .modal-dialog{
+@media (max-width: 768px) {
+  .modal-dialog {
     margin: 30px auto !important;
     width: 310px !important;
   }
-  .modal-content{
+  .modal-content {
     background: url("./assets/images/eventbackground.png");
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
   }
-  .modal-header{
-    text-align:center;
+  .modal-header {
+    text-align: center;
     font-size: 40px !important;
     color: #fff;
     font-family: Lato;
     border-bottom: none !important;
     font-weight: bold;
   }
-  .modal-header .close{
+  .modal-header .close {
     color: #000;
-    opacity: .8;
+    opacity: 0.8;
   }
-  .Description{
+  .Description {
     height: 250px;
-   width: 280px !important;
-   background-color: #fff;
-   border-radius: 12px; 
-   padding-left: 0 !important;
-   padding-right: 0 !important;
+    width: 280px !important;
+    background-color: #fff;
+    border-radius: 12px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
-  .Description2{
+  .Description2 {
     height: 100px;
-   width: 280px !important;
-   background-color: #fff;
-   border-radius: 12px; 
-   padding-left: 0 !important;
-   padding-right: 0 !important;
-   margin-top: 60px;
+    width: 280px !important;
+    background-color: #fff;
+    border-radius: 12px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-top: 60px;
   }
-  .Description3{
+  .Description3 {
     height: 100px;
-   width: 280pxpx !important;
-   background-color: #fff;
-   border-radius: 12px; 
-   padding-left: 0 !important;
-   padding-right: 0 !important;
-   margin-top: 60px;
+    width: 280pxpx !important;
+    background-color: #fff;
+    border-radius: 12px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-top: 60px;
   }
-  .eve_head{
+  .eve_head {
     font-size: 20px;
     text-align: left;
     color: #000;
@@ -1171,6 +1227,7 @@ footer {
     height: 33px;
     padding: 5px;
   }
+<<<<<<< HEAD
   
   }
     
@@ -1283,3 +1340,8 @@ footer {
 }
 
 /* event_schedule */
+=======
+}
+
+/* modal events */
+>>>>>>> Added flicker text
