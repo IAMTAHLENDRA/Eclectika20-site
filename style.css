@@ -1050,18 +1050,20 @@ footer {
   width: 900px !important;
 }
 .modal-content{
-  background-color: #ff4d4d !important;
+  background: url("./assets/images/eventbackground.png");
+  background-size:cover;
+    background-repeat: no-repeat;
 }
 .modal-header{
   text-align:center;
   font-size: 40px !important;
-  color: #fff;
+  color: #000;
   font-family: Lato;
   border-bottom: none !important;
   font-weight: bold;
 }
 .modal-header .close{
-  color: #fff;
+  color: #000;
   opacity: .8;
 }
 .Description{
@@ -1109,7 +1111,9 @@ footer {
     width: 310px !important;
   }
   .modal-content{
-    background-color: #ff4d4d !important;
+    background: url("./assets/images/eventbackground.png");
+    background-size:cover;
+    background-repeat: no-repeat;
   }
   .modal-header{
     text-align:center;
@@ -1120,7 +1124,7 @@ footer {
     font-weight: bold;
   }
   .modal-header .close{
-    color: #fff;
+    color: #000;
     opacity: .8;
   }
   .Description{
