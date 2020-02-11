@@ -440,7 +440,6 @@ nav.top-right {
   left: -199px;
 }
 
-
 @media screen and (max-width: 680px) {
   .building1 {
     height: 300px;
@@ -450,11 +449,10 @@ nav.top-right {
   }
 }
 @media screen and (device-width: 360px) {
-  .building1{
+  .building1 {
     height: 200px;
     width: 170px;
   }
-  
 }
 
 .building-left-half,
@@ -531,7 +529,6 @@ nav.top-right {
 @media screen and (max-width: 680px) {
   .scooter {
   }
-  
 }
 @keyframes up-down {
   from {
@@ -1108,21 +1105,21 @@ footer {
   height: 341px;
 }
 /* modal events */
-@media (min-width:768px){
-  .event-details{
+@media (min-width: 768px) {
+  .event-details {
     transition: 0.2s ease-in-out;
   }
-  .event-details:hover{
-  cursor: pointer;
-  transform: scale(1.1);
+  .event-details:hover {
+    cursor: pointer;
+    transform: scale(1.1);
   }
-.modal-dialog{
-  margin: 30px 400px auto !important;
-  width: 900px !important;
-}
-.modal-content{
-  background: url("./assets/images/eventbackground.png");
-  background-size:cover;
+  .modal-dialog {
+    margin: 30px 400px auto !important;
+    width: 900px !important;
+  }
+  .modal-content {
+    background: url("./assets/images/eventbackground.png");
+    background-size: cover;
     background-repeat: no-repeat;
   }
   .modal-header {
@@ -1234,35 +1231,35 @@ footer {
     height: 33px;
     padding: 5px;
   }
-  
-  }
-    
+}
+
 /* modal events */
 
 /* events_schedule */
-.event-button{
+.event-button {
   height: 100px;
   position: absolute;
   font-size: 20px !important;
   right: 30px;
   border-radius: 50% !important;
 }
-.coming-soon-img{
+.coming-soon-img {
   height: 500px;
   width: 550px;
 }
- 
-.event-button:focus,.event-button:hover{
-  border:none;
+
+.event-button:focus,
+.event-button:hover {
+  border: none;
   text-decoration: none !important;
 }
-.Description-event{
+.Description-event {
   height: 600px;
- width: 600px !important;
- background-color: #fff;
- border-radius: 12px; 
- padding-left: 0 !important;
- padding-right: 0 !important;
+  width: 600px !important;
+  background-color: #fff;
+  border-radius: 12px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 .m-accordion-button-tabs-minimal {
   line-height: 1.5;
@@ -1289,7 +1286,7 @@ footer {
   width: 100%;
   color: #fff;
   display: block;
-  transition: all .5s ease 0s;
+  transition: all 0.5s ease 0s;
   padding: 1em;
   text-decoration: none;
   /* margin-right: 0.5em; */
@@ -1301,11 +1298,14 @@ footer {
     margin-top: 0;
   }
 }
-.m-accordion-button-tabs-minimal a.m-tab-link:hover, .m-accordion-button-tabs-minimal a.m-tab-link:focus, .m-accordion-button-tabs-minimal a.m-tab-link.is-active {
+.m-accordion-button-tabs-minimal a.m-tab-link:hover,
+.m-accordion-button-tabs-minimal a.m-tab-link:focus,
+.m-accordion-button-tabs-minimal a.m-tab-link.is-active {
   color: #fff;
   background: #fd6868;
 }
-.m-accordion-button-tabs-minimal a.m-tab-link:hover, .m-accordion-button-tabs-minimal a.m-tab-link:focus {
+.m-accordion-button-tabs-minimal a.m-tab-link:hover,
+.m-accordion-button-tabs-minimal a.m-tab-link:focus {
   /* box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 .m-accordion-button-tabs-minimal .m-tab-content {
@@ -1318,29 +1318,29 @@ footer {
     float: left;
   }
 }
-@media (max-width:768px){
-  .Description-event{
+@media (max-width: 768px) {
+  .Description-event {
     height: 280px;
     width: 280px !important;
-   background-color: #fff;
-   border-radius: 12px; 
-   padding-left: 0 !important;
-   padding-right: 0 !important;
+    background-color: #fff;
+    border-radius: 12px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
-  .coming-soon-img{
+  .coming-soon-img {
     height: 200px;
     width: 265px;
   }
-  .m-tab-header-and-content{
+  .m-tab-header-and-content {
     width: 85px;
-    margin:4px;
-    float:left;
+    margin: 4px;
+    float: left;
   }
-  .m-tab-content{
-    position:absolute;
-    left:0;
+  .m-tab-content {
+    position: absolute;
+    left: 0;
   }
-  .m-accordion-button-tabs-minimal a.m-tab-link{
+  .m-accordion-button-tabs-minimal a.m-tab-link {
     padding: 10px;
   }
 }
