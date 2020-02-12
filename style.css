@@ -79,7 +79,9 @@ nav.top-right {
     opacity: 0.4;
   }
 }
-
+.pro-nite{
+  background-image: url("./assets/images/eventbackground.png");
+}
 .disc {
   position: absolute;
   display: inline-block;
@@ -1192,7 +1194,7 @@ h1 {
   background-repeat: no-repeat;
 }
 .item:nth-child(34){
-  background-image: url("assets/spons_images/");
+  background-image: url("assets/spons_images/Web_spons-23.jpg");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1539,6 +1541,7 @@ footer {
 	bottom:20px;
   background:url("./assets/sponsor/Group_1.png");
   background-size: contain;
+  background-repeat: no-repeat;
   padding-top:15px;
   padding-bottom:15px;
   padding-left:17px;
