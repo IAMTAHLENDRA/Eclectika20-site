@@ -52,53 +52,52 @@ nav.top-right {
   width: 5rem;
   border-radius: 50%;
   position: fixed;
-  top:4rem;
+  top: 4rem;
   right: 4rem;
   background-color: white;
   z-index: 2000;
   cursor: pointer;
-margin-top: -33px;
-margin-right: -42px;
+  margin-top: -33px;
+  margin-right: -42px;
 }
 
 .nav-background {
   height: 500px;
   width: 4rem;
   border-radius: 50%;
-  position:relative;
-  top:4.2rem;
+  position: relative;
+  top: 4.2rem;
   right: 4.3rem;
   background-color: white;
   /* background-image: radial-gradient(rgb(90, 193, 221),rgb(60, 172, 222)); */
   z-index: 1500;
   box-shadow: 0 1rem 3rem rgba(13, 11, 11, 0.49);
-  transition: transform .8s;
+  transition: transform 0.8s;
   /*transform: scale(80);*/
 }
 .nav-bar {
   height: 100vh;
   width: 0;
-  top:0;
+  top: 0;
   right: 0;
   position: fixed;
   z-index: 1500;
   opacity: 0;
-  transition: all .8s;
-
+  transition: all 0.8s;
 }
 
 .nav-list {
-  font-family: 'Monoton';
+  font-family: "Monoton";
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   list-style: none;
 }
 
 .nav-item {
- padding: .5rem;
+  padding: 0.5rem;
 }
 
 .nav-link:link,
@@ -109,19 +108,22 @@ margin-right: -42px;
   padding: 0.5rem 1rem;
   font-weight: 300;
   font-size: 1.5rem;
-  background-image: linear-gradient(120deg ,transparent 0% ,transparent 50% , white 50% );
+  background-image: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    white 50%
+  );
   background-size: 230%;
-  transition: all .4s;
+  transition: all 0.4s;
   color: black;
-
 }
 
 .nav-link:hover,
 .nav-link:active {
   background-position: 100%;
-  color:rgb(90, 193, 221) ;
+  color: rgb(90, 193, 221);
   transform: translateY(1rem);
-
 }
 
 .nav-input:checked ~ .nav-background {
@@ -129,7 +131,7 @@ margin-right: -42px;
 }
 
 .nav-input:checked ~ .nav-bar {
-    width: 100%;
+  width: 100%;
   opacity: 1;
 }
 
@@ -155,7 +157,7 @@ margin-right: -42px;
   display: inline-block;
   position: absolute;
   text-align: center;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .bars::before,
@@ -166,8 +168,12 @@ margin-right: -42px;
   text-align: center;
 }
 
-.bars::before {top: -.8rem;}
-.bars::after {top: .8rem;}
+.bars::before {
+  top: -0.8rem;
+}
+.bars::after {
+  top: 0.8rem;
+}
 
 .na:hover .bars::before {
   top: -1rem;
@@ -712,10 +718,10 @@ margin-right: -42px;
   border-top: 30px dashed white;
   margin-top: 25px;
   animation-name: road-moving;
-    animation-direction: normal;
-    animation-iteration-count: infinite;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
 }
 
 .skyline {
@@ -1200,6 +1206,10 @@ iframe {
   }
 }
 /* sponsor */
+
+#sponsorss {
+  margin-top: 100px;
+}
 body::-webkit-scrollbar {
   display: none;
 }
