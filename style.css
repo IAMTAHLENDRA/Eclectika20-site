@@ -1647,6 +1647,8 @@ footer {
   z-index: 1;
   bottom: 0;
   padding: 25px 40% 25px 20px;
+  color: #fff;
+  font-family: Lato;
 }
 
 .snip1543 figcaption:before,
@@ -1743,3 +1745,10 @@ footer {
   transition-delay: 0.1s;
 }
 /* pro nite */
+.fa-angle-up{
+  color:#000;
+  text-align: center;
+}
+.fa-4x{
+  font-size: 1em !important;
+}
