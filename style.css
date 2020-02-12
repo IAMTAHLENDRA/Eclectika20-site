@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Monoton&display=swap");
-@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700);
+@import url(
+  https://fonts.googleapis.com/css?family=Montserrat:300,
+  400,
+  500,
+  700
+);
 
-nav {
+/* nav {
   display: block;
   position: fixed;
   width: 500px;
@@ -38,9 +43,60 @@ nav.top-right {
     top: -160px;
     right: -160px;
   }
+} */
+
+.navbar {
+  transition: all 0.4s;
 }
 
+.navbar .nav-link {
+  color: #fff;
+}
 
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+}
+
+/* Change navbar styling on scroll */
+.navbar.active {
+  background: #fff;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+  color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+  color: #555;
+  text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+  color: #555;
+}
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+  .navbar {
+    /* background: #fff; */
+  }
+
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    color: #555;
+  }
+}
+#logoo {
+  width: 150px;
+}
 
 .neon {
   font-family: "Monoton", cursive;
@@ -48,7 +104,7 @@ nav.top-right {
   color: #ffd5ff;
   position: absolute;
   margin-top: -35px;
-  margin-left: 80px;
+  margin-left: 130px;
   transform: translate(-50%, -50%);
   font-weight: 400;
   letter-spacing: 8px;
@@ -59,6 +115,7 @@ nav.top-right {
 @media screen and (max-width: 680px) {
   .neon {
     font-size: 35px;
+    margin-left: 100px;
   }
 }
 .flicker-slow {
@@ -306,7 +363,8 @@ nav.top-right {
 }
 
 .mainn {
-  overflow: hidden;
+  overflow-x: hidden;
+  width: 100%;
   height: 100vh;
   background: linear-gradient(
     180deg,
@@ -390,6 +448,17 @@ nav.top-right {
     transform: rotate(110deg);
   }
 }
+@media screen and (max-width: 680px) {
+  @keyframes sun-moon1 {
+    from {
+      transform: rotate(-90deg);
+    }
+    to {
+      transform: rotate(90deg);
+    }
+  }
+}
+
 .road {
   width: 250%;
   height: 200px;
@@ -418,8 +487,9 @@ nav.top-right {
   top: 30px;
   border-top: 30px dashed white;
   margin-top: 25px;
-  animation: road-moving 10s infinite linear;
-  transition: all 3s linear;
+  animation: road-moving 20s linear infinite;
+
+  transition: all 0.2s linear;
 }
 
 .skyline {
@@ -428,12 +498,12 @@ nav.top-right {
   bottom: 205px;
   padding: 0;
   left: 110%;
-  animation: road-moving 10s infinite linear;
-  transition: all 8s linear;
+  animation: road-moving 20s infinite linear;
+  transition: all 2s linear;
 }
 
 .building1 {
-  width: 220px;
+  width: 250px;
   height: 500px;
   background-color: #211919;
   position: relative;
@@ -445,17 +515,28 @@ nav.top-right {
   border-bottom: 15px solid #000;
   border-left: 15px solid transparent;
   height: 700px;
-  width: 200px;
-  position: absolute;
+  width: 20px;
+  position: relative;
   left: -199px;
 }
 
 @media screen and (max-width: 680px) {
   .building1 {
     height: 300px;
+    width: 200px;
   }
   .building1-shadow {
     height: 300px;
+  }
+  .road {
+    width: 103%;
+  }
+  .road-top-half {
+    animation-name: road-moving;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
   }
 }
 @media screen and (device-width: 360px) {
@@ -478,7 +559,7 @@ nav.top-right {
 @media screen and (max-width: 680px) {
   .building-left-half,
   .building-right-half {
-    height: 340px;
+    height: 250px;
     width: 50px;
     position: absolute;
     top: 10px;
@@ -558,14 +639,15 @@ nav.top-right {
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  z-index: 2;
+  z-index: 11;
 }
 @media screen and (max-width: 680px) {
   .headlight {
     z-index: 2;
     position: absolute;
-    margin-top: 135px;
-    margin-left: -75px;
+    margin-top: 300px;
+    margin-left: -72px;
+    width: 43%;
   }
 }
 #eventbody {
@@ -890,30 +972,26 @@ iframe {
   }
 }
 /* sponsor */
-body::-webkit-scrollbar{
-  display:none;
+body::-webkit-scrollbar {
+  display: none;
 }
-#style-1::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-  background-color: #F5F5F5;
+#style-1::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
 }
 
-#style-1::-webkit-scrollbar
-{
+#style-1::-webkit-scrollbar {
   width: 8px;
-  height:100px;
-	background-color: #F5F5F5;
+  height: 100px;
+  background-color: #f5f5f5;
 }
 
-#style-1::-webkit-scrollbar-thumb
-{
-	border-radius: 8px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+#style-1::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #555;
 }
-
 
 @supports (display: grid) {
   .message {

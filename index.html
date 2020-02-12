@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link
@@ -18,17 +21,28 @@
     />
     <link rel="stylesheet" href="./style.css" />
     <link
+<<<<<<< HEAD
       href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+=======
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+>>>>>>> Horizontal scroll fixed + navbar changed
   </head>
-
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
   <body>
     <div class='thetop'></div>
     <div class="mainn">
-      <nav class="top-right open">
+      <!-- <img id="logoo" src="./assets/images/logo_new.png" alt=""> -->
+      <!-- <nav class="top-right open">
         <a class="disc l1">
           <div>Messages</div>
         </a>
@@ -42,34 +56,94 @@
           <div>Likes</div>
         </a>
         <a class="disc l5 toggle">
-          Menu
+          <i class="fab fa-audible"></i>
         </a>
-      </nav>
-      <div class="moon"></div>
+      </nav> -->
+      <!-- Navbar-->
 
-      <div class="skyline">
-        <h2 class="neon" data-text="U">
-          EC<span class="flicker-slow">LEC</span
-          ><span class="flicker-fast">TI</span>KA
-        </h2>
+      <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top py-3">
+          <div class="container">
+            <a href="#" class="navbar-brand text-uppercase font-weight-bold"
+              ><img id="logoo" src="./assets/images/logo_new.png" alt=""
+            /></a>
+            <button
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              class="navbar-toggler navbar-toggler-right"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
 
-        <div class="building1">
-          <div class="building-left-half"></div>
-          <div class="building-right-half"></div>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a href="#" class="nav-link text-uppercase font-weight-bold"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-uppercase font-weight-bold"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-uppercase font-weight-bold"
+                    >Gallery</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-uppercase font-weight-bold"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-uppercase font-weight-bold"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div id="contain">
+        <div class="moon"></div>
+
+        <div class="skyline">
+          <h2 class="neon" data-text="U">
+            EC<span class="flicker-slow">LEC</span
+            ><span class="flicker-fast">TI</span>KA
+          </h2>
+
+          <div class="building1">
+            <div class="building-left-half"></div>
+            <div class="building-right-half"></div>
+          </div>
         </div>
-      </div>
 
-      <div class="container-fluid">
-        <div class="scooter">
-          <img class="scooter-jump" src="./assets/images/scooter2.png" />
-          <img class="headlight" src="./assets/images/head-light.png" alt="" />
+        <div class="container-fluid">
+          <div class="scooter">
+            <img class="scooter-jump" src="./assets/images/scooter2.png" />
+            <img
+              class="headlight"
+              src="./assets/images/head-light.png"
+              alt=""
+            />
+          </div>
         </div>
-      </div>
-      <div class="road">
-        <div class="road-top-half"></div>
-        <div class="road-bottom-half"></div>
+        <div class="road">
+          <div class="road-top-half"></div>
+          <div class="road-bottom-half"></div>
+        </div>
       </div>
     </div>
+
     <section class="who_are_we">
       <div class="about_us">
         <div class="row">
@@ -4311,6 +4385,7 @@
           <div class="item"></div>
           <div class="item"></div>
           <div class="item"></div>
+<<<<<<< HEAD
           <div class="item"></div>
           <div class="item"></div>
           <div class="item"></div>
@@ -4323,6 +4398,8 @@
           <div class="item"></div>
           <div class="item"></div>
           <div class="item"></div>
+=======
+>>>>>>> Horizontal scroll fixed + navbar changed
           <div class="item"></div>
           <div class="item"></div>
           <div class="item"></div>
@@ -4427,28 +4504,37 @@
       <div class="scroll icon"><i class="fa fa-4x fa-angle-up"></i></div>
     </div>
     <script>
-      toggle = document.querySelectorAll(".toggle")[0];
-      nav = document.querySelectorAll("nav")[0];
-      toggle_open_text = "Menu";
-      toggle_close_text = "Close";
+      // toggle = document.querySelectorAll(".toggle")[0];
+      // nav = document.querySelectorAll("nav")[0];
+      // toggle_open_text = "Menu";
+      // toggle_close_text = "Close";
 
-      toggle.addEventListener(
-        "click",
-        function() {
-          nav.classList.toggle("open");
+      // toggle.addEventListener(
+      //   "click",
+      //   function() {
+      //     nav.classList.toggle("open");
 
-          if (nav.classList.contains("open")) {
-            toggle.innerHTML = toggle_close_text;
+      //     if (nav.classList.contains("open")) {
+      //       toggle.innerHTML = toggle_close_text;
+      //     } else {
+      //       toggle.innerHTML = toggle_open_text;
+      //     }
+      //   },
+      //   false
+      // );
+
+      // setTimeout(function() {
+      //   nav.classList.toggle("open");
+      // }, 800);
+      $(function() {
+        $(window).on("scroll", function() {
+          if ($(window).scrollTop() > 10) {
+            $(".navbar").addClass("active");
           } else {
-            toggle.innerHTML = toggle_open_text;
+            $(".navbar").removeClass("active");
           }
-        },
-        false
-      );
-
-      setTimeout(function() {
-        nav.classList.toggle("open");
-      }, 800);
+        });
+      });
     </script>
     <!-- scroll to top -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
