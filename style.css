@@ -79,46 +79,46 @@ nav.top-right {
   cursor: pointer;
 margin-top: -33px;
 /* margin-right: -42px; */
+
 }
 
 .nav-background {
   height: 500px;
   width: 4rem;
   border-radius: 50%;
-  position:relative;
-  top:4.2rem;
+  position: relative;
+  top: 4.2rem;
   right: 4.3rem;
   background-color: white;
   /* background-image: radial-gradient(rgb(90, 193, 221),rgb(60, 172, 222)); */
   z-index: 1500;
   box-shadow: 0 1rem 3rem rgba(13, 11, 11, 0.49);
-  transition: transform .8s;
+  transition: transform 0.8s;
   /*transform: scale(80);*/
 }
 .nav-bar {
   height: 100vh;
   width: 0;
-  top:0;
+  top: 0;
   right: 0;
   position: fixed;
   z-index: 1500;
   opacity: 0;
-  transition: all .8s;
-
+  transition: all 0.8s;
 }
 
 .nav-list {
-  font-family: 'Monoton';
+  font-family: "Monoton";
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   list-style: none;
 }
 
 .nav-item {
- padding: .5rem;
+  padding: 0.5rem;
 }
 
 .nav-link:link,
@@ -129,19 +129,22 @@ margin-top: -33px;
   padding: 0.5rem 1rem;
   font-weight: 300;
   font-size: 1.5rem;
-  background-image: linear-gradient(120deg ,transparent 0% ,transparent 50% , white 50% );
+  background-image: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    white 50%
+  );
   background-size: 230%;
-  transition: all .4s;
+  transition: all 0.4s;
   color: black;
-
 }
 
 .nav-link:hover,
 .nav-link:active {
   background-position: 100%;
-  color:rgb(90, 193, 221) ;
+  color: rgb(90, 193, 221);
   transform: translateY(1rem);
-
 }
 
 .nav-input:checked ~ .nav-background {
@@ -149,7 +152,7 @@ margin-top: -33px;
 }
 
 .nav-input:checked ~ .nav-bar {
-    width: 100%;
+  width: 100%;
   opacity: 1;
 }
 
@@ -175,7 +178,7 @@ margin-top: -33px;
   display: inline-block;
   position: absolute;
   text-align: center;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .bars::before,
@@ -186,8 +189,12 @@ margin-top: -33px;
   text-align: center;
 }
 
-.bars::before {top: -.8rem;}
-.bars::after {top: .8rem;}
+.bars::before {
+  top: -0.8rem;
+}
+.bars::after {
+  top: 0.8rem;
+}
 
 .na:hover .bars::before {
   top: -1rem;
@@ -716,10 +723,10 @@ margin-top: -33px;
   border-top: 30px dashed white;
   margin-top: 25px;
   animation-name: road-moving;
-    animation-direction: normal;
-    animation-iteration-count: infinite;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
 }
 
 .skyline {
@@ -909,8 +916,13 @@ body {
 }
 
 .who_are_we,
-.about_us {
+.about_us{
   z-index: 10;
+}
+
+.theme {
+  z-index: 10;
+  margin-top: 100px;
 }
 /* STRUCTURE */
 .wrapper {
@@ -986,6 +998,15 @@ body {
   margin-left: 20px;
   font-family: Lato;
 }
+.text11 {
+  font-size: 30px;
+  text-align: center;
+  /* margin: 150px; */
+  margin-left: -300px;
+  margin-right: 400px;
+  font-family: Lato;
+  margin-top: 1146px;
+}
 .headers {
   text-align: center;
   font-size: 60px;
@@ -994,7 +1015,14 @@ body {
   font-weight: bold;
   margin-top: 20px !important;
 }
-
+.plate {
+  background: url("./assets/images/Group\ 350.png");
+  height: 600px;
+  width: 600px;
+  background-size: contain;
+  margin: 995px -90px;
+  background-repeat: no-repeat;
+}
 /* form */
 .form-main {
   margin: 100px;
@@ -1168,7 +1196,8 @@ iframe {
     margin: 0;
   }
   .our_theme {
-    height: 35em;
+    background-size: cover;
+    height: auto;
   }
   .about_us {
     margin-top: 20px;
@@ -1184,6 +1213,14 @@ iframe {
     margin: 0;
     margin-top: 35px;
   }
+  .plate{
+    visibility: hidden;
+    height: 310px;
+    width: 310px;
+    margin: 0;
+    margin-top: 664px;
+    margin-left: 35px;
+  }
   #badal-1 {
     left: 0;
   }
@@ -1192,8 +1229,13 @@ iframe {
     width: 275px;
   }
   .text {
-    margin: 0;
+    margin: 30px;
     font-size: 20px;
+  }
+  .text11 {
+    margin: 30px;
+    font-size: 20px;
+    margin-top: -668px;
   }
 
   .form-main {
@@ -1213,6 +1255,10 @@ iframe {
   }
 }
 /* sponsor */
+
+#sponsorss {
+  margin-top: 100px;
+}
 body::-webkit-scrollbar {
   display: none;
 }
@@ -1866,7 +1912,7 @@ footer {
   position: absolute;
   right: 20px;
   bottom: 20px;
-  background: url("./assets/sponsor/Group_1.png");
+  background: transparent;
   background-repeat: no-repeat;
   background-size: contain;
   background-repeat: no-repeat;
