@@ -1863,7 +1863,7 @@ footer {
   position: absolute;
   right: 20px;
   bottom: 20px;
-  background: url("./assets/sponsor/Group_1.png");
+  background: transparent;
   background-repeat: no-repeat;
   background-size: contain;
   background-repeat: no-repeat;
