@@ -911,8 +911,13 @@ body {
 }
 
 .who_are_we,
-.about_us {
+.about_us{
   z-index: 10;
+}
+
+.theme {
+  z-index: 10;
+  margin-top: 100px;
 }
 /* STRUCTURE */
 .wrapper {
@@ -988,6 +993,15 @@ body {
   margin-left: 20px;
   font-family: Lato;
 }
+.text11 {
+  font-size: 30px;
+  text-align: center;
+  /* margin: 150px; */
+  margin-left: -300px;
+  margin-right: 400px;
+  font-family: Lato;
+  margin-top: 1146px;
+}
 .headers {
   text-align: center;
   font-size: 60px;
@@ -995,7 +1009,14 @@ body {
   font-family: Lato;
   font-weight: bold;
 }
-
+.plate {
+  background: url("./assets/images/Group\ 350.png");
+  height: 600px;
+  width: 600px;
+  background-size: contain;
+  margin: 995px -90px;
+  background-repeat: no-repeat;
+}
 /* form */
 .form-main {
   margin: 100px;
@@ -1161,7 +1182,8 @@ iframe {
     margin: 0;
   }
   .our_theme {
-    height: 35em;
+    background-size: cover;
+    height: auto;
   }
   .about_us {
     margin-top: 20px;
@@ -1177,6 +1199,14 @@ iframe {
     margin: 0;
     margin-top: 35px;
   }
+  .plate{
+    visibility: hidden;
+    height: 310px;
+    width: 310px;
+    margin: 0;
+    margin-top: 664px;
+    margin-left: 35px;
+  }
   #badal-1 {
     left: 0;
   }
@@ -1185,8 +1215,13 @@ iframe {
     width: 275px;
   }
   .text {
-    margin: 0;
+    margin: 30px;
     font-size: 20px;
+  }
+  .text11 {
+    margin: 30px;
+    font-size: 20px;
+    margin-top: -668px;
   }
 
   .form-main {
