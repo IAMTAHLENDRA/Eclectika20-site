@@ -6,6 +6,7 @@
   700
 );
 
+
 /* nav {
   display: block;
   position: fixed;
@@ -43,6 +44,25 @@ nav.top-right {
     right: -160px;
   }
 } */
+
+/* video */
+@media (min-width:768px){
+  #landing-page2{
+    display: none;
+  }
+}
+@media (max-width:768px){
+  video{
+    width: 400px;
+  }
+  #landing-page{
+    display: none;
+  }
+}
+/* video */
+.navigation-bar{
+  position: absolute;
+}
 .nav-input {
   display: none;
 }
@@ -52,13 +72,14 @@ nav.top-right {
   width: 5rem;
   border-radius: 50%;
   position: fixed;
-  top: 4rem;
-  right: 4rem;
+  top:4rem;
+  right: 1rem;
   background-color: white;
   z-index: 2000;
   cursor: pointer;
-  margin-top: -33px;
-  margin-right: -42px;
+margin-top: -33px;
+/* margin-right: -42px; */
+
 }
 
 .nav-background {
@@ -198,10 +219,11 @@ nav.top-right {
 }
 
 #logoo {
+  position: absolute;
   width: 200px;
-  margin-bottom: -180px;
-  margin-top: -90px;
-  margin-left: 50px;
+  /* margin-bottom: -180px; */
+  margin-top: -50px;
+  margin-left: 10px;
 }
 
 .neon {
@@ -596,23 +618,6 @@ nav.top-right {
 .mainn {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(
-    180deg,
-    #09283d,
-    #1b415c,
-    #29516c,
-    #6e8ea5,
-    #7cadd0,
-    #7cadd0,
-    #7cadd0,
-    #7cadd0,
-    #6e8ea5,
-    #3a6583,
-    #1a4461,
-    #09283d
-  );
-  background-size: 2400% 2400%;
-  animation: dayNight 60s ease infinite;
 }
 
 @keyframes dayNight {
@@ -1008,6 +1013,7 @@ body {
   color: #fe4310;
   font-family: Lato;
   font-weight: bold;
+  margin-top: 20px !important;
 }
 .plate {
   background: url("./assets/images/Group\ 350.png");
@@ -1039,6 +1045,7 @@ body {
   text-align: center;
 
   color: #c91b28;
+  margin-top: 100px;
 }
 
 .btnn {
@@ -1082,6 +1089,10 @@ body {
   font-weight: 400;
   color: #747477;
   font-family: Lato;
+}
+
+.btn-block:hover{
+  color: #fff;
 }
 /* form */
 
@@ -1178,6 +1189,9 @@ iframe {
 }
 /* footer */
 @media only screen and (max-width: 786px) {
+  .who_are_we{
+    margin-top: 50px;
+  }
   .bg-image {
     margin: 0;
   }
@@ -1191,7 +1205,7 @@ iframe {
   .couple {
     height: 310px;
     width: 310px;
-    margin: 0;
+    margin: 15px;
   }
   .couple_2 {
     height: 300px;
