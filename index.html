@@ -52,14 +52,14 @@
   
         <nav class="nav-bar" id="away">
           <ul class="nav-list" class="neon" id="aab" >
-            <li class="nav-item"><a href="#aboutme" class="nav-link" onclick="go()">About us</a></li>
+            <li class="nav-item"><a href="#aboutuss" class="nav-link" onclick="go()">About us</a></li>
             <li class="nav-item"><a href="#skill" class="nav-link" onclick="go()" >Theme</a></li>
             <li class="nav-item"><a href="#contactme" class="nav-link" onclick="go()">Pronite</a></li>
-            <li class="nav-item"><a href="#skill" class="nav-link" onclick="go()" >Gallery</a></li>
-            <li class="nav-item"><a href="#skill" class="nav-link" onclick="go()" >Events</a></li>
-            <li class="nav-item"><a href="#skill" class="nav-link" onclick="go()" >Sponsors</a></li>
+            <li class="nav-item"><a href="#galleryy" class="nav-link" onclick="go()" >Gallery</a></li>
+            <li class="nav-item"><a href="./events.html" class="nav-link" onclick="go()" >Events</a></li>
+            <li class="nav-item"><a href="#sponsorss" class="nav-link" onclick="go()" >Sponsors</a></li>
             <li class="nav-item"><a href="#skill" class="nav-link" onclick="go()" >Our Team</a></li>
-            <li class="nav-item" class=""><a href="http://iamanimesh.co.nf/myresume.pdf" class="nav-link">Contact us</a></li>
+            <li class="nav-item" class=""><a href="#contactuss" class="nav-link" onclick="go()">Contact us</a></li>
           </ul>
         </nav>
       </div>
@@ -99,7 +99,7 @@
       </div>
     </div>
 
-    <section class="who_are_we">
+    <section class="who_are_we" id="aboutuss">
       <div class="about_us">
         <div class="row">
           <div class="col-sm-6">
@@ -134,7 +134,7 @@
     <section>
       <div class="our_theme"></div>
     </section>
-    <section class="gallery-main">
+    <section class="gallery-main" id="galleryy">
       <div id="gallery-tab" class="site-section block-13">
         <div class="homepage-featured-events">
           <div class="row">
@@ -4318,7 +4318,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="sponsorss">
       <div class="headers">Our Sponsors</div>
       <div class="over" id="style-1">
         <div class="grid">
@@ -4410,7 +4410,7 @@
       </div>
     </section>
 
-    <div class="footer">
+    <div class="footer" id="contactuss">
       <div
         class="row footerC"
         style="background-image: url('assets/footer/footer_bg.png');"
@@ -4479,6 +4479,11 @@
         nav.classList.toggle("open");
       }, 50);
       
+      function go() {
+        var items=document.getElementById('nav-toogle');
+
+						items.checked=false;
+		}
 
 
     </script>
