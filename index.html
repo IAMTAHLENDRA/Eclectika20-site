@@ -30,12 +30,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
   <body>
     <div class='thetop'></div>
     
     
-    <div></div>
+    <!-- <div></div> -->
     
     <!-- Menu Icon -->
    
@@ -68,7 +68,13 @@
       
 
       <div id="contain">
-        <div class="moon"></div>
+        <video  loop id="landing-page" autoplay muted>
+          <source src="./ec-new-2020-02-13_00.42.28 (online-video-cutter.com) (1).mp4" type="video/mp4">
+        </video> 
+        <video  loop id="landing-page2" autoplay muted>
+          <source src="./ec-new-mobile-2020-02-13_01.47.14.mkv" type="video/mp4">
+        </video>
+        <!-- <div class="moon"></div>
 
         <div class="skyline">
           <h2 class="neon" data-text="U">
@@ -95,7 +101,7 @@
         <div class="road">
           <div class="road-top-half"></div>
           <div class="road-bottom-half"></div>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -4397,7 +4403,7 @@
                     placeholder="Message"
                   ></textarea>
                 </div>
-                <button type="button" class="btn btn-lg btn-block btnn">
+                <button type="button" class="btn btn-lg btn-block btnn" onclick="window.alert('Feedback Recorded')">
                   Register
                 </button>
               </form>
