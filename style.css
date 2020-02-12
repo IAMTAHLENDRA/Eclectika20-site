@@ -6,7 +6,7 @@
   700
 );
 
-nav {
+/* nav {
   display: block;
   position: fixed;
   width: 500px;
@@ -42,6 +42,153 @@ nav.top-right {
     top: -160px;
     right: -160px;
   }
+} */
+.nav-input {
+  display: none;
+}
+
+.na {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  position: fixed;
+  top:4rem;
+  right: 4rem;
+  background-color: white;
+  z-index: 2000;
+  cursor: pointer;
+margin-top: -33px;
+margin-right: -42px;
+}
+
+.nav-background {
+  height: 500px;
+  width: 4rem;
+  border-radius: 50%;
+  position:relative;
+  top:4.2rem;
+  right: 4.3rem;
+  background-color: white;
+  /* background-image: radial-gradient(rgb(90, 193, 221),rgb(60, 172, 222)); */
+  z-index: 1500;
+  box-shadow: 0 1rem 3rem rgba(13, 11, 11, 0.49);
+  transition: transform .8s;
+  /*transform: scale(80);*/
+}
+.nav-bar {
+  height: 100vh;
+  width: 0;
+  top:0;
+  right: 0;
+  position: fixed;
+  z-index: 1500;
+  opacity: 0;
+  transition: all .8s;
+
+}
+
+.nav-list {
+  font-family: 'Monoton';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  list-style: none;
+}
+
+.nav-item {
+ padding: .5rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+  background-image: linear-gradient(120deg ,transparent 0% ,transparent 50% , white 50% );
+  background-size: 230%;
+  transition: all .4s;
+  color: black;
+
+}
+
+.nav-link:hover,
+.nav-link:active {
+  background-position: 100%;
+  color:rgb(90, 193, 221) ;
+  transform: translateY(1rem);
+
+}
+
+.nav-input:checked ~ .nav-background {
+  transform: scale(80);
+}
+
+.nav-input:checked ~ .nav-bar {
+    width: 100%;
+  opacity: 1;
+}
+
+.nav-icon::after,
+.nav-icon::before {
+  display: inline-block;
+  width: 3rem;
+  height: 2px;
+  background-color: grey;
+}
+.bars {
+  position: relative;
+  margin-top: 2.5rem;
+  margin-right: 0.5rem;
+  margin-left: 20px;
+}
+.bars,
+.bars::before,
+.bars::after {
+  width: 2.5rem;
+  height: 1.8px;
+  background-color: #333;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  transition: all .2s;
+}
+
+.bars::before,
+.bars::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  text-align: center;
+}
+
+.bars::before {top: -.8rem;}
+.bars::after {top: .8rem;}
+
+.na:hover .bars::before {
+  top: -1rem;
+}
+
+.na:hover .bars::after {
+  top: 1rem;
+}
+
+.nav-input:checked + .na .bars {
+  background-color: transparent;
+}
+
+.nav-input:checked + .na .bars::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.nav-input:checked + .na .bars::after {
+  top: 0;
+  transform: rotate(-135deg);
 }
 
 #logoo {
@@ -100,7 +247,7 @@ nav.top-right {
   }
 }
 
-.disc {
+/* .disc {
   position: absolute;
   display: inline-block;
   text-align: center;
@@ -433,7 +580,7 @@ nav.top-right {
   transform: scale(0.9);
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
-}
+} */
 
 .mainn {
   width: 100%;
@@ -509,15 +656,15 @@ nav.top-right {
     transform: translateY(-20px);
   }
   100% {
-    transform: translate(80px, -140px);
+    transform: translate(50px, -140px);
   }
 }
 @keyframes sun-moon {
   from {
-    transform: rotate(0deg);
+    transform: rotate(-45deg);
   }
   to {
-    transform: rotate(110deg);
+    transform: rotate(40deg);
   }
 }
 @media screen and (max-width: 680px) {
@@ -532,7 +679,7 @@ nav.top-right {
 }
 
 .road {
-  width: 250%;
+  width: 100.5%;
   height: 200px;
   background-color: #585858;
   border-top: 10px solid #756d6d;
@@ -553,15 +700,17 @@ nav.top-right {
 }
 .road-top-half {
   height: 15px;
-  width: 250%;
+  width: 150%;
   position: absolute;
   left: -10%;
   top: 30px;
   border-top: 30px dashed white;
   margin-top: 25px;
-  animation: road-moving 20s linear infinite;
-
-  transition: all 0.2s linear;
+  animation-name: road-moving;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
 }
 
 .skyline {
@@ -674,6 +823,7 @@ nav.top-right {
   margin: 0;
   height: 2em;
   width: 100%;
+  margin-top: -500px;
 }
 .scooter-jump {
   position: relative;
@@ -691,6 +841,7 @@ nav.top-right {
 }
 @media screen and (max-width: 680px) {
   .scooter {
+    margin-top: -500px;
   }
 }
 @keyframes up-down {
