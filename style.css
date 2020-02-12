@@ -52,12 +52,21 @@ nav.top-right {
   }
 }
 @media (max-width:768px){
+  .video-cont{
+    max-height: 700px;
+  }
   video{
     width: 400px;
+    height: auto;
   }
   #landing-page{
     display: none;
   }
+}
+@media (max-height:650px){
+ .who_are_we{
+   margin-top: 250px;
+ }
 }
 /* video */
 .navigation-bar{
@@ -1189,9 +1198,6 @@ iframe {
 }
 /* footer */
 @media only screen and (max-width: 786px) {
-  .who_are_we{
-    margin-top: 50px;
-  }
   .bg-image {
     margin: 0;
   }
