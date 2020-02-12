@@ -6,7 +6,7 @@
   700
 );
 
-/* nav {
+nav {
   display: block;
   position: fixed;
   width: 500px;
@@ -43,59 +43,14 @@ nav.top-right {
     top: -160px;
     right: -160px;
   }
-} */
-
-.navbar {
-  transition: all 0.4s;
 }
 
-.navbar .nav-link {
-  color: #fff;
-}
 
-.navbar .nav-link:hover,
-.navbar .nav-link:focus {
-  color: #fff;
-  text-decoration: none;
-}
-
-.navbar .navbar-brand {
-  color: #fff;
-}
-
-/* Change navbar styling on scroll */
-.navbar.active {
-  background: #fff;
-  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.navbar.active .nav-link {
-  color: #555;
-}
-
-.navbar.active .nav-link:hover,
-.navbar.active .nav-link:focus {
-  color: #555;
-  text-decoration: none;
-}
-
-.navbar.active .navbar-brand {
-  color: #555;
-}
-
-/* Change navbar styling on small viewports */
-@media (max-width: 991.98px) {
-  .navbar {
-    /* background: #fff; */
-  }
-
-  .navbar .navbar-brand,
-  .navbar .nav-link {
-    color: #555;
-  }
-}
 #logoo {
-  width: 150px;
+  width: 200px;
+  margin-bottom: -180px;
+  margin-top: -90px;
+  margin-left: 50px;
 }
 
 .neon {
@@ -332,6 +287,127 @@ nav.top-right {
   -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
   transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
 }
+.l6 {
+  top: 250px;
+  left: 250px;
+  right: 250px;
+  bottom: 250px;
+  background: #000;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.open .l6 {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  opacity: 1;
+}
+.open .l6:hover {
+  background: shade(#000, 90%);
+  color: #000;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.open .l6:active {
+  background: shade(#000, 50%);
+  color: #000;
+}
+.open .l6.toggle {
+  -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+  transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+}
+.l7 {
+  top: 300px;
+  left: 300px;
+  right: 300px;
+  bottom: 300px;
+  background: #ffc00e;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.open .l7 {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  opacity: 1;
+}
+.open .l7:hover {
+  background: shade(#ffc00e, 90%);
+  color: #ffc00e;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.open .l7:active {
+  background: shade(#ffc00e, 50%);
+  color: #ffc00e;
+}
+.open .l7.toggle {
+  -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+  transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+}
+.l8 {
+  top: 350px;
+  left: 350px;
+  right: 350px;
+  bottom: 350px;
+  background: #ffc00e;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.open .l8 {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  opacity: 1;
+}
+.open .l8:hover {
+  background: shade(#ffc00e, 90%);
+  color: #ffc00e;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.open .l8:active {
+  background: shade(#ffc00e, 50%);
+  color: #ffc00e;
+}
+.open .l8.toggle {
+  -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+  transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+}
+.l9 {
+  top: 400px;
+  left: 400px;
+  right: 400px;
+  bottom: 400px;
+  background: #ffc00e;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.open .l9 {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  opacity: 1;
+}
+.open .l9:hover {
+  background: shade(#ffc00e, 90%);
+  color: #ffc00e;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.open .l9:active {
+  background: shade(#ffc00e, 50%);
+  color: #ffc00e;
+}
+.open .l9.toggle {
+  -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+  transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+}
+
 
 .toggle {
   line-height: 100px;
