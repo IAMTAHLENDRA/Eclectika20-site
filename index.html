@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link
@@ -22,54 +25,81 @@
       rel="stylesheet"
     />
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <body>
     <div class='thetop'></div>
+    
+    
+    <div></div>
+    
+    <!-- Menu Icon -->
+   
     <div class="mainn">
-      <nav class="top-right open">
-        <a class="disc l1">
-          <div>Messages</div>
-        </a>
-        <a class="disc l2">
-          <div>Photos</div>
-        </a>
-        <a class="disc l3">
-          <div>Profile</div>
-        </a>
-        <a class="disc l4">
-          <div>Likes</div>
-        </a>
-        <a class="disc l5 toggle">
-          Menu
-        </a>
-      </nav>
-      <div class="moon"></div>
-
-      <div class="skyline">
-        <h2 class="neon" data-text="U">
-          EC<span class="flicker-slow">LEC</span
-          ><span class="flicker-fast">TI</span>KA
-        </h2>
-
-        <div class="building1">
-          <div class="building-left-half"></div>
-          <div class="building-right-half"></div>
-        </div>
+      <img id="logoo"   src="./assets/images/logo_new.png" alt="">
+      <div class="navigation-bar">
+        <input type="checkbox" class="nav-input" id="nav-toogle">
+  
+        <label for="nav-toogle" class="na">
+        <span class="bars"></span>
+        </label>
+  
+        <div class="nav-background" id="bckgrund">&nbsp;</div>
+  
+        <nav class="nav-bar" id="away">
+          <ul class="nav-list" class="neon" id="aab" >
+            <li class="nav-item"><a href="#aboutuss" class="nav-link" onclick="go()">About us</a></li>
+            <li class="nav-item"><a href="#skill" class="nav-link" onclick="go()" >Theme</a></li>
+            <li class="nav-item"><a href="#contactme" class="nav-link" onclick="go()">Pronite</a></li>
+            <li class="nav-item"><a href="#galleryy" class="nav-link" onclick="go()" >Gallery</a></li>
+            <li class="nav-item"><a href="./events.html" class="nav-link" onclick="go()" >Events</a></li>
+            <li class="nav-item"><a href="#sponsorss" class="nav-link" onclick="go()" >Sponsors</a></li>
+            <li class="nav-item"><a href="#skill" class="nav-link" onclick="go()" >Our Team</a></li>
+            <li class="nav-item" class=""><a href="#contactuss" class="nav-link" onclick="go()">Contact us</a></li>
+          </ul>
+        </nav>
       </div>
+      
 
-      <div class="container-fluid">
-        <div class="scooter">
-          <img class="scooter-jump" src="./assets/images/scooter2.png" />
-          <img class="headlight" src="./assets/images/head-light.png" alt="" />
+      
+
+      <div id="contain">
+        <div class="moon"></div>
+
+        <div class="skyline">
+          <h2 class="neon" data-text="U">
+            EC<span class="flicker-slow">LEC</span
+            ><span class="flicker-fast">TI</span>KA
+          </h2>
+
+          <div class="building1">
+            <div class="building-left-half"></div>
+            <div class="building-right-half"></div>
+          </div>
         </div>
-      </div>
-      <div class="road">
-        <div class="road-top-half"></div>
-        <div class="road-bottom-half"></div>
+
+        <div class="container-fluid">
+          <div class="scooter">
+            <img class="scooter-jump" src="./assets/images/scooter2.png" />
+            <img
+              class="headlight"
+              src="./assets/images/head-light.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="road">
+          <div class="road-top-half"></div>
+          <div class="road-bottom-half"></div>
+        </div>
       </div>
     </div>
-    <section class="who_are_we">
+
+    <section class="who_are_we" id="aboutuss">
       <div class="about_us">
         <div class="row">
           <div class="col-sm-6">
@@ -106,7 +136,7 @@
     <section>
       <div class="our_theme"></div>
     </section>
-    <section class="gallery-main">
+    <section class="gallery-main" id="galleryy">
       <div id="gallery-tab" class="site-section block-13">
         <div class="homepage-featured-events">
           <div class="row">
@@ -4290,7 +4320,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="sponsorss">
       <div class="headers">Our Sponsors</div>
       <div class="over" id="style-1">
         <div class="grid">
@@ -4382,7 +4412,7 @@
       </div>
     </section>
 
-    <div class="footer">
+    <div class="footer" id="contactuss">
       <div
         class="row footerC"
         style="background-image: url('assets/footer/footer_bg.png');"
@@ -4400,6 +4430,12 @@
           <h1 class="lean-head">Contact us</h1>
           <p>G.E. Road, Raipur, Chhatisgarh 492010, INDIA</p>
           <p>call. +91 99939 62989 <br />Email : nitrr.eclectika@gmail.com</p>
+          <p><ul class="ul-main">
+            <li><a href="https://www.facebook.com/eclectika.nitrr/" class="fa fa-facebook" target="_blank"></a></li>
+            <li><a href="https://twitter.com/eclectika_nitrr" class="fa fa-twitter" target="_blank"></a></li>
+            <li><a href="https://www.youtube.com/user/EclectikaNitrr" target="_blank" class="fa fa-youtube"></a></li>
+            <li><a href="https://www.instagram.com/eclectika_nitrr" target="_blank" class="fa fa-instagram"></a></li>
+          </ul></p>
         </div>
         <div class="col-md-5 col-lg-5 movie">
           <div class="block-16 ">
@@ -4443,7 +4479,15 @@
 
       setTimeout(function() {
         nav.classList.toggle("open");
-      }, 800);
+      }, 50);
+      
+      function go() {
+        var items=document.getElementById('nav-toogle');
+
+						items.checked=false;
+		}
+
+
     </script>
     <!-- scroll to top -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
