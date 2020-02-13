@@ -2553,3 +2553,9 @@ color: #3498db;
     width: 50vh;
   }
 }
+
+@media (max-width:1400px) and (min-width:1000px){
+html{
+  zoom: 67%;
+}
+}
