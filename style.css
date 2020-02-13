@@ -1111,7 +1111,7 @@ body {
   height: 600px;
   width: 800px;
   margin: 50px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .form-control::placeholder {
   font-weight: 400;
