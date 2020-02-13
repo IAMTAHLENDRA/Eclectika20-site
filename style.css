@@ -1737,7 +1737,7 @@ footer {
     opacity: 0.8;
   }
   .Description {
-    height: 400px;
+    min-height: 200px;
     width: 600px !important;
     background-color: #fff;
     border-radius: 12px;
@@ -1745,7 +1745,7 @@ footer {
     padding-right: 0 !important;
   }
   .Description2 {
-    height: 200px;
+    min-height: 200px;
     width: 600px !important;
     background-color: #fff;
     border-radius: 12px;
@@ -1754,7 +1754,7 @@ footer {
     margin-top: 100px;
   }
   .Description3 {
-    height: 200px;
+    min-height: 200px;
     width: 600px !important;
     background-color: #fff;
     border-radius: 12px;
@@ -1797,7 +1797,7 @@ footer {
     opacity: 0.8;
   }
   .Description {
-    height: 250px;
+    min-height: 200px;
     width: 280px !important;
     background-color: #fff;
     border-radius: 12px;
@@ -1805,7 +1805,7 @@ footer {
     padding-right: 0 !important;
   }
   .Description2 {
-    height: 100px;
+    min-height: 200px;
     width: 280px !important;
     background-color: #fff;
     border-radius: 12px;
@@ -1814,7 +1814,7 @@ footer {
     margin-top: 60px;
   }
   .Description3 {
-    height: 100px;
+    min-height: 200px;
     width: 280pxpx !important;
     background-color: #fff;
     border-radius: 12px;
@@ -2554,6 +2554,49 @@ color: #3498db;
   }
 }
 
+#event-titlee {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 132px;
+  height: 59px;
+  font-family: Lato;
+  font-size: 49px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+#event-titleee {
+  position: absolute;
+  top: 40%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+  width: 132px;
+  height: 59px;
+  font-family: Lato;
+  font-size: 49px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.eventdescmodal,
+.eventrules,
+.eventjuding,
+.eventregister {
+  margin: 10px;
+  font-size: 20px;
+}
 @media (max-width:1400px) and (min-width:1000px){
 html{
   zoom: 67%;
