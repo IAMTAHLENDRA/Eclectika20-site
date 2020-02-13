@@ -924,7 +924,7 @@ margin-top: -33px;
   margin-bottom: -150px;
   animation-name: up-down,flikr2;
   animation-direction: alternate;
-  animation-duration: 0.5s;
+  animation-duration: 0.5s,5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   z-index: 11;
