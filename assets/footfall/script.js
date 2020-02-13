@@ -16,3 +16,18 @@
 		  count($(this));
 		});
    })(jQuery);
+
+
+
+//    preloader
+$(function(){
+  'use strict';
+	$(window).on('load', function () {
+		if ($(".pre-loader").length > 0)
+		{
+			$(".pre-loader").fadeOut("slow",function(){
+			  $(".pre-loader").css("display", "none");
+			});
+		}
+	});
+})
