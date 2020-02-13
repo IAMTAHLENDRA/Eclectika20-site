@@ -47,7 +47,7 @@ nav.top-right {
 } */
 
 /* video */
-@media (min-width:768px){
+/* @media (min-width:768px){  
   #landing-page2{
     display: none;
   }
@@ -63,7 +63,7 @@ nav.top-right {
   #landing-page{
     display: none;
   }
-}
+}*/
 @media (max-height:650px){
  .who_are_we{
    margin-top: 250px;
@@ -228,13 +228,11 @@ margin-top: -33px;
 }
 
 #logoo {
-  position: absolute;
   width: 200px;
-  /* margin-bottom: -180px; */
-  margin-top: -32px;
-  margin-left: 30px;
+  margin-bottom: -180px;
+  margin-top: -90px;
+  margin-left: 50px;
 }
-
 .neon {
   font-family: "Monoton", cursive;
   font-size: 50px;
@@ -627,6 +625,23 @@ margin-top: -33px;
 .mainn {
   width: 100%;
   height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #09283d,
+    #1b415c,
+    #29516c,
+    #6e8ea5,
+    #7cadd0,
+    #7cadd0,
+    #7cadd0,
+    #7cadd0,
+    #6e8ea5,
+    #3a6583,
+    #1a4461,
+    #09283d
+  );
+  background-size: 2400% 2400%;
+  animation: dayNight 60s ease infinite;
 }
 
 @keyframes dayNight {
@@ -848,7 +863,7 @@ margin-top: -33px;
   margin: 0;
   height: 2em;
   width: 100%;
-  margin-top: -500px;
+  margin-top: -50px;
 }
 .scooter-jump {
   position: relative;
@@ -864,9 +879,10 @@ margin-top: -33px;
   padding-top: 50px;
   margin-top: 200px;
 }
+
 @media screen and (max-width: 680px) {
   .scooter {
-    margin-top: -500px;
+    margin-top: -50px;
   }
 }
 @keyframes up-down {
