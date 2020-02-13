@@ -1014,7 +1014,7 @@ body {
   margin-left: -300px;
   margin-right: 400px;
   font-family: Lato;
-  margin-top: 1146px;
+  margin-top: 900px;
 }
 .headers {
   text-align: center;
@@ -1202,7 +1202,7 @@ iframe {
     margin: 0;
   }
   .our_theme {
-    background-size: cover;
+    background-size: contain;
     height: auto;
   }
   .about_us {
@@ -1224,7 +1224,7 @@ iframe {
     height: 310px;
     width: 310px;
     margin: 0;
-    margin-top: 664px;
+    margin-top: 800px;
     margin-left: 35px;
   }
   #badal-1 {
@@ -2177,3 +2177,64 @@ footer {
 .fa-twitter:hover {
   color: white;
 }
+
+/* milestone counter */
+
+.milestone-counter {
+  /* float: left; */
+  /* margin: 25px; */
+  text-align: center;
+}
+.stat {
+ margin:10px auto;
+}
+.highlight {
+ color:#111;
+ padding:5px 0;
+ font-weight:bold;
+ display:block;
+ overflow:hidden;
+ /* margin-bottom:0; */
+ font-size:48px;
+ font-family: Lato;
+}
+.stat i {
+color: #3498db;
+}
+.milestone-details {
+ font-weight:bold;
+ font-size:18px;
+ color:#000;
+}
+
+.badal-important{
+  position: relative;
+  top: 27%;
+  left:7% ;
+}
+.plus-sign{
+  float:right;
+  padding-top: 15px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+@media (max-width:768px){
+  .badal-important{
+    top: -990px;
+    left:230px;
+  }
+  .highlight{
+    font-size: 10px;
+    padding:0 0;
+  }
+  .milestone-counter{
+    /* float:right; */
+  }
+  .milestone-details{
+    font-size: 10px;
+}
+.counter-width{
+  width:50px;
+  padding: 0;
+}
+/* milestone counter */
