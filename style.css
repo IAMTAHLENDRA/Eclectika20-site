@@ -802,6 +802,9 @@ margin-top: -33px;
     animation-timing-function: linear;
   }
 }
+.skyline{
+  left: 20%;
+}
 @media screen and (device-width: 360px) {
   .building1 {
     height: 200px;
@@ -904,7 +907,7 @@ margin-top: -33px;
 }
 20%,
 40%,
-72% {
+80% {
   opacity: 0;
 }
 }
@@ -916,7 +919,7 @@ margin-top: -33px;
   margin-bottom: -150px;
   animation-name: up-down,flikr2;
   animation-direction: alternate;
-  animation-duration: 0.5s;
+  animation-duration: 0.5s,5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   z-index: 11;
