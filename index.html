@@ -4486,31 +4486,10 @@ Food is everything we are. It’s an extension of our cultural and ethnic feelin
       </div>
     </div>
     <div class="scrolltop">
-      <div class="scroll icon"><i class="fa fa-4x fa-angle-up"></i></div>
+      <div class="scroll icon"><i class="fa fa-4x fa-angle-double-up"></i></div>
     </div>
     <script>
-      toggle = document.querySelectorAll(".toggle")[0];
-      nav = document.querySelectorAll("nav")[0];
-      toggle_open_text = "Menu";
-      toggle_close_text = "Close";
-
-      toggle.addEventListener(
-        "click",
-        function() {
-          nav.classList.toggle("open");
-
-          if (nav.classList.contains("open")) {
-            toggle.innerHTML = toggle_close_text;
-          } else {
-            toggle.innerHTML = toggle_open_text;
-          }
-        },
-        false
-      );
-
-      setTimeout(function() {
-        nav.classList.toggle("open");
-      }, 50);
+      
       
       function go() {
         var items=document.getElementById('nav-toogle');
