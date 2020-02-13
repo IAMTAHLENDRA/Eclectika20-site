@@ -2238,6 +2238,15 @@ color: #3498db;
   padding: 0;
 }
 }
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .badal-important{
+    top: -995px;
+    left:228px;
+  }
+  
+}
 /* milestone counter */
 
 
@@ -2256,7 +2265,7 @@ color: #3498db;
 
 
 
-h1 {
+.pre-head {
   position: relative;
   margin: 0 auto;
   top: 25vh;
