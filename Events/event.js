@@ -13,7 +13,6 @@ function showQuestion(event, $modal) {
   var num = parseInt(button.data("num"));
   var question = jsondata[num];
 
-  
   $modal.find(".modal-title").text(question.Name);
   $modal.find(".eventdescmodal").text(question.Description);
   $modal.find(".eventrules").text(question.Rules);

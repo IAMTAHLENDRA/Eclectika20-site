@@ -2572,6 +2572,24 @@ color: #3498db;
   color: #ffffff;
 }
 
+#event-titleee {
+  position: absolute;
+  top: 40%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+  width: 132px;
+  height: 59px;
+  font-family: Lato;
+  font-size: 49px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
 .eventdescmodal,
 .eventrules,
 .eventjuding,
