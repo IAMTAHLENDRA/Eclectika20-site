@@ -33,6 +33,9 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
   <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
   <body>
       <!-- PRELOADER -->
   <div class="pre-loader">
@@ -4458,7 +4461,7 @@ Food is everything we are. It’s an extension of our cultural and ethnic feelin
       </div>
     </section>
 
-    <section class="contact_us">
+    <section class="contact_us" id="contactuss">
       <div>
         <div class="taste-heading">
           We'd love to know your taste
@@ -4468,13 +4471,14 @@ Food is everything we are. It’s an extension of our cultural and ethnic feelin
             <div class="container">
               <form class="form-main">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Name" />
+                  <input type="text" class="form-control" placeholder="Name" id="name" />
                 </div>
                 <div class="form-group">
                   <input
                     type="email"
                     class="form-control"
                     placeholder="Email"
+                    id="emailid"
                   />
                 </div>
                 <div class="form-group">
@@ -4482,18 +4486,20 @@ Food is everything we are. It’s an extension of our cultural and ethnic feelin
                     type="text"
                     class="form-control"
                     placeholder="Phone no"
+                    id="number"
                   />
                 </div>
                 <div class="form-group">
                   <!-- <label for="exampleFormControlTextarea1">Example textarea</label> -->
                   <textarea
                     class="form-control"
-                    id="exampleFormControlTextarea1"
+                    
                     rows="3"
                     placeholder="Message"
+                    id="txtt"
                   ></textarea>
                 </div>
-                <button type="button" class="btn btn-lg btn-block btnn" onclick="window.alert('Feedback Recorded')">
+                <button type="button" class="btn btn-lg btn-block btnn" onclick= "validateformm();" >
                   Register
                 </button>
               </form>
@@ -4562,6 +4568,40 @@ Food is everything we are. It’s an extension of our cultural and ethnic feelin
 						items.checked=false;
 		}
 
+    function validateformm() {
+        var name = document.getElementById("name").value;
+        var emailid = document.getElementById("emailid").value;
+        var number = document.getElementById("number").value;
+        // var txtt = document.getElementById("txtt").value;
+
+        if (name == "") {
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Enter a name!"
+          });
+        } else if (emailid == "") {
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Enter an email ID!"
+          });
+        } else if (number == "") {
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Enter the Phone number!"
+          });
+        } else if (txtt == "") {
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Enter your message!"
+          });
+        } else {
+          Swal.fire("Success", "Your message sent successfully!!", "success");
+        }
+      }
 
     </script>
     <!-- scroll to top -->
