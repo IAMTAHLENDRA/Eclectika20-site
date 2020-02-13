@@ -2559,3 +2559,76 @@ html{
   zoom: 67%;
 }
 }
+
+
+.team-mem{
+  height: 400px;
+  width: 300px;
+  /* background-color: #6c63ff; */
+  margin-top:  70px;
+  /* float: right; */
+  /* border: 1px solid black; */
+}
+.inside-me{
+  position: relative;
+  height: 300px;
+  width: 360px;
+  background-color: #6c63ff;
+  margin: 130px 80px;
+  border-radius: 10px;
+}
+.circle{
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  /* border: 1px solid black; */
+  z-index: 3;
+  margin:60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.lakir{
+  border: 1px solid #1509fc;
+  margin:30px;
+  height: 300px;
+  width: 350px;
+  border-radius: 10px;
+}
+.per-details{
+  height: 200px;
+  width: 200px;
+  margin: 50px 73px;
+  color: #fff;
+  font-family: Lato;
+  font-size: 25px;
+  text-align: center;
+
+}
+.header-team{
+  text-align: center; font-family: Lato;font-size: 50px;margin-top: 30px;color: #fff;
+}
+@media (max-width:786px){
+  .team-mem{
+    margin-top: 10px;
+    height: 320px;
+  }
+  .inside-me{
+    height: 220px;
+    width: 300px;
+    margin: 100px 15px;
+  }
+  .circle{
+    margin: 30px 0;
+    height: 120px;
+    width: 120px;
+  }
+  .lakir{
+    margin: 10px;
+    width: 285px;
+    height: 222px;
+  }
+  .per-details{
+    font-size: 20px;
+    margin: 40px 30px;
+  }
+}
