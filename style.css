@@ -2631,7 +2631,7 @@ html{
   background-repeat: no-repeat;
 }
 .lakir{
-  border: 1px solid #1509fc;
+  border: 2px solid #1509fc;
   margin:30px;
   height: 300px;
   width: 350px;
@@ -2644,12 +2644,18 @@ html{
   color: #fff;
   font-family: Lato;
   font-size: 25px;
-  text-align: center;
+  text-align: right;
 
 }
 .header-team{
-  text-align: center; font-family: Lato;font-size: 50px;margin-top: 30px;color: #fff;
+  background-image: url("./images/Screenshot_20200214_050421.png");
+ margin: auto;
+  width: 600px;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+
 @media (max-width:786px){
   .team-mem{
     margin-top: 10px;
@@ -2674,4 +2680,30 @@ html{
     font-size: 20px;
     margin: 40px 30px;
   }
+  .bhula-image,.bhuljao-image{
+    display: none;
+  }
+  .header-team{
+    background-image: url("./images/Screenshot_20200214_050421.png");
+   margin: auto;
+    width: 300px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.bhula-image{
+  background-image: url("./team/Group_195.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.bhula-image2{
+  height: 400px;
+  width: 300px;
+  background-image: url("./team/Group_195.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
 }
