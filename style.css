@@ -793,6 +793,7 @@ margin-top: -33px;
   }
   .road {
     width: 103%;
+    overflow: hidden !important;
   }
   .road-top-half {
     animation-name: road-moving;
@@ -800,11 +801,13 @@ margin-top: -33px;
     animation-iteration-count: infinite;
     animation-duration: 8s;
     animation-timing-function: linear;
+    overflow: hidden;
+  }
+  .skyline{
+    left: 20%;
   }
 }
-.skyline{
-  left: 20%;
-}
+
 @media screen and (device-width: 360px) {
   .building1 {
     height: 200px;
@@ -834,6 +837,9 @@ margin-top: -33px;
     margin-top: 25px;
     z-index: 0;
   }
+}
+.skyline{
+  left: 20%;
 }
 
 .building-left-half {
@@ -2259,7 +2265,7 @@ color: #3498db;
 @media (max-width:768px){
   .badal-important{
     top: -990px;
-    left:230px;
+    left:10px;
   }
   .highlight{
     font-size: 10px;
@@ -2281,7 +2287,12 @@ color: #3498db;
 @media (min-width: 320px) and (max-width: 480px) {
   .badal-important{
     top: -995px;
-    left:228px;
+    left:18px;
+  }
+  .stat{
+    top: 10px;
+    position: absolute;
+    right: 60px;
   }
   
 }
@@ -2313,7 +2324,7 @@ color: #3498db;
   font-size: 6vh;
   color: #333;
   opacity: .75;
-  animation: pulse 2.5s linear infinite;
+  animation: pulse 0.5s linear infinite;
 }
 
 #cooking {
