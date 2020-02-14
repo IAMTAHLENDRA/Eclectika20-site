@@ -1,5 +1,5 @@
 let jsondata;
-fetch("http://eclectika.org/api/news.php/GetEventByCategory?category=7")
+fetch("https://eclectika.org/api/news.php/GetEventByCategory?category=7")
   .then(function(u) {
     return u.json();
   })
