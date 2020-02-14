@@ -1023,12 +1023,15 @@ body {
   height: 30em;
   margin: 100px -90px;
 }
+.couple-height{
+  height: auto;
+}
 .couple {
   background: url("./assets/about-us/bg_circle.png");
   height: 600px;
   width: 600px;
   background-size: contain;
-  margin: 100px 30px;
+  margin: 130px 30px;
   background-repeat: no-repeat;
 }
 .couple_2 {
