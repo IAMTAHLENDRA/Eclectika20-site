@@ -2597,9 +2597,9 @@ color: #3498db;
   margin: 10px;
   font-size: 20px;
 }
-@media (max-width:1400px) and (min-width:1000px){
+@media (max-width:1300px) and (min-width:1000px){
 html{
-  zoom: 67%;
+  zoom: 80%;
 }
 }
 
