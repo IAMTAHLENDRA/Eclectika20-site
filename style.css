@@ -2226,14 +2226,14 @@ footer {
 }
 
 /* milestone counter */
-
 .milestone-counter {
   /* float: left; */
   /* margin: 25px; */
   text-align: center;
 }
 .stat {
- margin:10px auto;
+  width: 600px;
+ margin:45px auto;
 }
 .highlight {
  color:#111;
@@ -2258,13 +2258,14 @@ color: #3498db;
   position: relative;
   top: 27%;
 }
-.plus-sign{
-  float:right;
-  padding-top: 15px;
-  font-size: 30px;
-  font-weight: bolder;
-}
+
 @media (max-width:768px){
+  .nhi-dikhana{
+    display:none;
+  }
+  .stat{
+    width: 120px;
+  }
   .badal-important{
     top: -990px;
     left:10px;
@@ -2280,21 +2281,26 @@ color: #3498db;
     font-size: 10px;
 }
 .counter-width{
-  width:50px;
+  width:60px;
   padding: 0;
 }
 }
 
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .stat{
+    width: 120px;
+  }
   .badal-important{
-    top: -995px;
-    left:18px;
+    top: -1000px;
+    left:34px;
   }
   .stat{
     top: 10px;
     position: absolute;
     right: 60px;
+    display: flex;
+    flex-direction: row;
   }
   
 }
@@ -2603,6 +2609,9 @@ color: #3498db;
 @media (max-width:1500px) and (min-width:1000px){
 html{
   zoom: 75%;
+}
+.htao{
+  display: none;
 }
 }
 
