@@ -90,7 +90,12 @@ nav.top-right {
 margin-top: -33px;
 /* margin-right: -42px; */
 }
-
+@media screen and (max-width: 680px) {
+ .na {
+   height: 3rem;
+   width: 3rem;
+ }
+}
 .nav-background {
   height: 500px;
   width: 4rem;
@@ -115,7 +120,9 @@ margin-top: -33px;
   opacity: 0;
   transition: all 0.8s;
 }
-
+@media screen and (max-width: 680px) {
+  .nav-bar {}
+}
 .nav-list {
   font-family: "Monoton";
   position: absolute;
@@ -178,6 +185,14 @@ margin-top: -33px;
   margin-right: 0.5rem;
   margin-left: 20px;
 }
+@media screen and (max-width: 680px) {
+  .bars {
+    position: relative;
+    margin-top: 1.5rem;
+    margin-left: 5px;
+   
+  }
+}
 .bars,
 .bars::before,
 .bars::after {
@@ -228,7 +243,7 @@ margin-top: -33px;
 }
 
 #logoo {
-  width: 200px;
+  width: 225px;
   margin-bottom: -180px;
   margin-top: -90px;
   margin-left: 50px;
@@ -969,6 +984,7 @@ body {
 .who_are_we,
 .about_us{
   z-index: 10;
+  background-color: #FFE6C9;
 }
 
 .theme {
@@ -1707,8 +1723,9 @@ footer {
 }
 
 #eventlogo {
-  width: 341px;
-  height: 341px;
+  width: 310px;
+  height: 320px;
+  margin: 20px;
 }
 /* modal events */
 @media (min-width: 768px) {
@@ -1843,12 +1860,13 @@ footer {
 
 /* events_schedule */
 .event-button {
-  height: 100px;
+  /* height: 80px; */
   position: absolute;
   font-size: 20px !important;
-  right: 30px;
-  border-radius: 50% !important;
+  right: 15px;
+  /* border-radius: 50% !important; */
 }
+
 .coming-soon-img {
   height: 500px;
   width: 550px;
