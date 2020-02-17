@@ -1079,7 +1079,7 @@ body {
 .headers {
   text-align: center;
   font-size: 60px;
-  color: #ee82ee;
+  color: #d31d29;
   font-family: Lato;
   font-weight: bold;
   margin-top: 20px !important;
@@ -1113,7 +1113,7 @@ body {
 
   text-align: center;
 
-  color: #ee82ee;
+  color: #d31d29;
   margin-top: 100px;
 }
 
@@ -2709,7 +2709,7 @@ html{
     font-size: 20px;
     margin: 40px 30px;
   }
-  .bhula-image,.bhuljao-image{
+  .hide2,.bhuljao-image{
     display: none;
   }
   .header-team{
@@ -2723,19 +2723,22 @@ html{
 }
 
 .bhula-image{
-  background-image: url("./team/Group_195.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.bhula-image img{
-  margin: 120px 0;
-}
-.bhula-image2{
   height: 400px;
-  width: 300px;
+  width: 400px;
   background-image: url("./team/Group_195.png");
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  right: 0;
+  left: 33%;
+}
+
+.bhula-image2{
+  height: 400px;
+  width: 300px;
+  background-image: url("assets/spons_images/Group.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 30%;
+  top: 30%;
 }
