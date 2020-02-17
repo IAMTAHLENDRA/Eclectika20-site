@@ -91,6 +91,13 @@ margin-top: -33px;
 /* margin-right: -42px; */
 }
 
+@media (max-height:650px){
+  .na {
+    height: 3rem;
+    width: 3rem;
+  }
+ }
+
 .nav-background {
   height: 500px;
   width: 4rem;
@@ -178,6 +185,7 @@ margin-top: -33px;
   margin-right: 0.5rem;
   margin-left: 20px;
 }
+
 .bars,
 .bars::before,
 .bars::after {
@@ -204,6 +212,13 @@ margin-top: -33px;
 .bars::after {
   top: 0.8rem;
 }
+
+@media (max-height:650px){
+  .bars {
+    margin-top: 1.5rem;
+    margin-left: 5px;
+  }
+ }
 
 .na:hover .bars::before {
   top: -1rem;
