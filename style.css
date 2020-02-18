@@ -1237,6 +1237,7 @@ body {
     font-size: 15px;
     /* width: 50px; */
     padding-top: 5%;
+    margin-top: 85px;
   }
   [class*="lean-head"] {
     font-size: 20px;
@@ -2741,4 +2742,20 @@ html{
   position: absolute;
   right: 30%;
   top: 30%;
+}
+
+.coming-soon{
+  height: 500px;
+  width: 500px;
+  margin: 100px;
+  background-image: url("./images/coming-soon.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.app-ann{
+  margin: 0;
+}
+.play-button{
+  height: 100px;
+  width: 230px;
 }
